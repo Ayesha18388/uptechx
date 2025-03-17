@@ -1,6 +1,7 @@
 import React from "react";
 
 // The CourseCard component accepts props for title, level, and link
+//kullu
 const CourseCard = ({ title, level, link }) => {
   return (
     <div className="course-card">
