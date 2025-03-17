@@ -1,0 +1,142 @@
+/* General container styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6f3fa, #7a00ff); /* Gradient background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card styling */
+  .signup-card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Title and subtitle */
+  .signup-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7a00ff;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .signup-input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .signup-input:focus {
+    border-color: #7a00ff;
+    box-shadow: 0 0 5px rgba(122, 0, 255, 0.3);
+  }
+  
+  /* Signup button */
+  .signup-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #7a00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .signup-button:hover {
+    background-color: #5e00cc;
+  }
+  
+  /* Footer text */
+  .signup-footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .login-link {
+    color: #7a00ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Google Button */
+  .google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: white;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .google-button:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Divider */
+  .divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }

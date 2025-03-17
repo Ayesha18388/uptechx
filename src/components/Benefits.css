@@ -1,0 +1,99 @@
+h2 {
+  font-size: 2rem;
+  color: #c622d5;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.benefits-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  margin-bottom: 40px; /* Add margin to separate it from the Trending section */
+  text-align: center;
+}
+
+.benefit-item {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: jump 2s ease-in-out; /* Add jumping animation */
+}
+
+.benefit-item img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.benefit-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Keyframes for jumping animation */
+@keyframes jump {
+  0% {
+    transform: translateY(0); /* Original position */
+  }
+  30% {
+    transform: translateY(-20px); /* Move up */
+  }
+  50% {
+    transform: translateY(0); /* Return to original position */
+  }
+  70% {
+    transform: translateY(-10px); /* Small bounce */
+  }
+  100% {
+    transform: translateY(0); /* Back to original position */
+  }
+}
+
+.benefit-image {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.fade-in {
+  animation: bounceIn 7s ease-in-out forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.text-fade {
+  animation: slideUp 7s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

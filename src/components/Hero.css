@@ -1,0 +1,141 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(to right, #e3fdfd, #fde2ff);
+}
+
+.hero-image {
+  position: relative;
+   position: absolute;  
+  left: 680px;
+  top: -70px;
+  width: 300px;
+  max-height: 650px;
+  margin-right: auto;
+  animation:float 3s ease-in-out infinite; /* Add animation */
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up slightly */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+}
+}
+
+/* .photo-back {
+  position: absolute;
+  left: 907px;
+  top: 157px;
+  z-index: -1; /* Behind hero image */
+ 
+
+/* .grow-bg {
+  position: absolute;
+  left: 1181px;
+  top: -288px;
+  z-index: 0; /* Above hero image but below grow.svg */
+ 
+
+/* .grow {
+  position: absolute;
+  left: 1187px;
+  top: -288px;
+  z-index: 1; /* Above grow-bg */
+
+
+/* .yellow-circle {
+  position: absolute;
+  left: 873px;
+  top: 250px;
+  z-index: 2; /* Above hero image */
+
+
+/* .blue-circle {
+  position: absolute;
+  left: 1169px;
+  top: 172px;
+  z-index: 2; /* Above hero image */
+
+
+/* .triangle {
+  position: absolute;
+  left: 899.45px;
+  top: -455.13px;
+}
+
+.udhte-lines {
+  position: absolute; */
+  /* left: 902.59px;
+  top: -182px;
+} */
+
+.hero-content {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d1b2a;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 20px 0;
+}
+.hero-image {
+  width: 100%; /* Ensure the image takes up the full width */
+  max-width: 800px; /* Set a maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+}
+/* Explore Button */
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #c005d9; /* Purple background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #5e00cc; /* Darker purple on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d1b2a;
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fade-slide-in 2s ease-in-out forwards; /* Apply animation */
+}
+
+/* Keyframes for fade-in and slide-in animation */
+@keyframes fade-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}

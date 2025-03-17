@@ -1,0 +1,136 @@
+.profile-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.toggle-sidebar-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #7a00ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.toggle-sidebar-button:hover {
+  background-color: #5e00cc;
+}
+
+.profile-sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  font-size: 24px;
+  color: #7a00ff;
+}
+
+.close-icon {
+  font-size: 24px;
+  color: #7a00ff;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-icon:hover {
+  color: #ff40ff;
+}
+
+/* Card-like structure for collapsible sections */
+.profile-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+  font-size: 20px;
+  color: #7a00ff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.profile-card h3:hover {
+  color: #ff40ff;
+}
+
+.collapsible-content {
+  margin-top: 10px;
+}
+
+.collapsible-content p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.collapsible-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.collapsible-content ul li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.collapsible-content ul li:hover {
+  color: #7a00ff;
+  text-decoration: underline;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.profile-settings h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #7a00ff;
+}
+
+.profile-settings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-settings ul li {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+  cursor: pointer;
+}
+
+.profile-settings ul li:hover {
+  color: #7a00ff;
+  text-decoration: underline;
+}

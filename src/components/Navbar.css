@@ -1,0 +1,196 @@
+/* Navbar background and padding */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure items touch the screen edges */
+.navbar .container-fluid {
+  padding: 0 20px; /* Adjust padding if needed */
+}
+
+/* Logo */
+.logo {
+  height: 100px; /* Adjust as needed */
+  display: block;
+}
+
+.navbar-logo h1 {
+  font-size: 24px;
+  color: #7a00ff;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  width: 250px; /* Adjust width for better usability */
+  max-width: 100%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 12px;
+  padding-right: 40px; /* Space for icon */
+  border: 2px solid #7a00ff; /* Purple border */
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect */
+.search-box input:focus {
+  border-color: #ff40ff; /* Pink when focused */
+  box-shadow: 0 0 5px rgba(122, 0, 255, 0.5);
+}
+
+/* Search Icon */
+.search-box .search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7a00ff; /* Purple color */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change search icon color on hover */
+.search-box .search-icon:hover {
+  color: #ff40ff;
+}
+
+/* Clear Button */
+.clear-btn {
+  position: absolute;
+  right: 35px; /* Adjust to align with the search input */
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: gray;
+}
+
+.clear-btn:hover {
+  color: black;
+}
+
+/* Search Results Dropdown */
+.search-results {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  /* Animation styles */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-results.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.search-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-item:hover {
+  background: #f0f0f0;
+}
+
+/* Highlighted text in search results */
+.search-item .highlight {
+  background-color: yellow; /* Yellow background */
+  font-weight: bold; /* Bold text */
+  color: black; /* Black text for better readability */
+  border-radius: 2px; /* Optional: Rounded corners */
+  padding: 0 2px; /* Optional: Add some padding */
+}
+
+/* Login and Sign-Up Buttons */
+.sign-up-btn {
+  background-color: #ff40ff; /* Pink background */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.sign-up-btn:hover {
+  background-color: #d000d0; /* Darker pink on hover */
+}
+
+/* Ensure navbar items are properly aligned */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.btn-danger {
+  background-color: #b81ae8; /* Red for logout */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #e711c0; /* Darker red on hover */
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Profile Icon */
+.profile-icon {
+  font-size: 24px; /* Adjust the size of the icon */
+  color: #7a00ff; /* Purple color */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.profile-icon:hover {
+  color: #ff40ff; /* Pink color on hover */
+}

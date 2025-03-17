@@ -1,0 +1,69 @@
+.why-choose-us {
+  text-align: center;
+  background-color: #db21fc; /* Updated background color */
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1;
+  text-align: left;
+}
+
+.question-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.floating-boxes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.floating-box {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 500;
+  margin-bottom: 30px; /* Increased margin to add space between boxes */
+  animation: popup 3s ease-in-out infinite; /* Apply popup animation */
+}
+
+.box1 { margin-left: -200px; } /* Adjusted position to the left */
+.box2 { margin-left: auto; margin-right: 50px; } /* Aligned to the right */
+.box3 { margin-left: -150px; } /* Adjusted position to the left */
+.box4 { margin-left: auto; margin-right: 70px; } /* Aligned to the right */
+.box5 { margin-left: -250px; } /* Adjusted position to the left */
+
+/* Popup Animation */
+@keyframes popup {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+  100% {
+    transform: scale(1); /* Back to original size */
+  }
+}
