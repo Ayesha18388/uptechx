@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyB1InYgn934zsK-zVYHbeSkwn3PcrpcbLY",
+  authDomain: "http://uptechx-d31a8.firebaseapp.com",
+  projectId: "uptechx-d31a8",
+  storageBucket: "http://uptechx-d31a8.firebasestorage.app",
+  messagingSenderId: "811608436000",
+  appId: "1:811608436000:web:38f3f67f4717ff40673b45"
 };
 
 // Initialize Firebase
@@ -16,3 +16,4 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
 export { auth, provider, signInWithPopup };
+

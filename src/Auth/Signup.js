@@ -1,6 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import "./Signup.css";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyB1InYgn934zsK-zVYHbeSkwn3PcrpcbLY",
+  authDomain: "http://uptechx-d31a8.firebaseapp.com",
+  projectId: "uptechx-d31a8",
+  storageBucket: "http://uptechx-d31a8.firebasestorage.app",
+  messagingSenderId: "811608436000",
+  appId: "1:811608436000:web:38f3f67f4717ff40673b45"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -16,11 +32,13 @@ const Signup = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setError("");
+
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form submitted");
     
     // Basic validation
     if (formData.password !== formData.confirmPassword) {
@@ -33,24 +51,19 @@ const Signup = () => {
       return;
     }
 
-    // Create user object
-    const newUser = {
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      email: formData.email,
-      password: formData.password
-    };
+    await handleSignup();
+  };
 
-    // Save to localStorage
+  const handleSignup = async () => {
     try {
-      const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-      localStorage.setItem("user", JSON.stringify({ email: user.email, name: user.displayName }));
-      alert(`Welcome, ${user.displayName}!`);
+      const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+      const user = userCredential.user;
+      localStorage.setItem("user", JSON.stringify({ email: user.email, password: formData.password, name: `${formData.firstName} ${formData.lastName}` }));
+      alert(`Welcome, ${formData.firstName} ${formData.lastName}!`);
       navigate("/"); // Redirect to home page
     } catch (error) {
-      console.error("Error during Google Signup:", error);
-      alert("Google Signup failed. Please try again.");
+      console.error("Error during signup:", error);
+      setError(`Signup failed: ${error.message}`);
     }
   };
 
@@ -59,14 +72,6 @@ const Signup = () => {
       <div className="signup-card">
         <h2 className="signup-title">Create Your Account</h2>
         <p className="signup-subtitle">Join us and start your journey</p>
-        <button className="google-button" onClick={handleGoogleSignup}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-            alt="Google Logo"
-            className="google-logo"
-          />
-          Continue with Google
-        </button>
         <div className="divider">or</div>
         <form onSubmit={handleSubmit} className="signup-form">
           <input
@@ -116,6 +121,7 @@ const Signup = () => {
             Sign Up
           </button>
         </form>
+        {error && <p className="error-message">{error}</p>}
         <p className="signup-footer">
           Already have an account? <a href="/login" className="login-link">Login Here</a>
         </p>
@@ -125,3 +131,4 @@ const Signup = () => {
 };
 
 export default Signup;
+

@@ -1,27 +1,54 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import "./Trending.css";
 
 const trendingData = [
   {
     image: "/image/data science.png",
     title: "Data Science",
+    category: "Data Science",
   },
   {
     image: "/image/devops.png",
     title: "Devops",
+    category: "DevOps",
   },
   {
     image: "/image/cc.png",
     title: "Cloud Computing",
+    category: "Cloud Computing",
   },
   {
     image: "/image/sd.png",
     title: "Software Development",
+    category: "Software Development",
   },
 ];
 
 const Trending = () => {
+  const navigate = useNavigate();
+
+  const handleStartLearning = (category) => {
+    switch (category) {
+      case "Data Science":
+        window.location.href = "/datascience.html"; // Navigate to datascience.html
+        break;
+      case "DevOps":
+        window.location.href = "/devops.html"; // Navigate to devops.html
+        break;
+      case "Cloud Computing":
+        window.location.href = "/cc.html"; // Navigate to cc.html
+        break;
+      case "Software Development":
+        window.location.href = "/softwaredev.html"; // Navigate to softwaredevelopment.html
+        break;
+      default:
+        navigate(`/courses?category=${encodeURIComponent(category)}`);
+        break;
+    }
+  };
+
   return (
     <div className="trending-section">
       <h2>Trending</h2>
@@ -51,6 +78,7 @@ const Trending = () => {
               className="start-learning"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
+              onClick={() => handleStartLearning(item.category)}
             >
               Start Learning
             </motion.button>

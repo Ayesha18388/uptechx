@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UpTechX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .contact-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: #6c2eb9;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form textarea {
+            height: 100px;
+        }
+        .contact-form button {
+            background: #6c2eb9;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover {
+            background: #5a23a0;
+        }
+        .contact-details {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+            <p>Email: contact@uptechx.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+
+</body>
+</html>

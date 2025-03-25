@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next.js & React Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      background-color: #781496;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+    }
+
+    .course h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .course a {
+      text-decoration: none;
+      color: #741394;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .course a:hover {
+      color: #750ea1;
+    }
+
+    .level {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category">
+      Next.js & React Courses
+    </div>
+
+    <div class="courses-list">
+      <div class="course">
+        <h3><a href="https://www.udemy.com/course/nextjs-react-the-complete-guide/" target="_blank">Next.js & React - The Complete Guide</a></h3>
+        <p>Learn Next.js and React in this intermediate-level course, focusing on full-stack web development.</p>
+        <p class="level">Level: Intermediate</p>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/introduction-to-next-js" target="_blank">Introduction to Next.js</a></h3>
+        <p>Get started with Next.js and learn its core features, including server-side rendering and static site generation.</p>
+        <p class="level">Level: Intermediate</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

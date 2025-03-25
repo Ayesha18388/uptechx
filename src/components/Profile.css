@@ -1,10 +1,7 @@
 .profile-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
-  height: 100vh;
-  background-color: #f9f9f9;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .toggle-sidebar-button {
@@ -24,14 +21,35 @@
   background-color: #5e00cc;
 }
 
+.profile-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 24px;
+}
+
 .profile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
   width: 300px;
   height: 100%;
   background-color: white;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 999;
   overflow-y: auto;
-  position: relative;
+}
+
+.profile-sidebar.open {
+  right: 0;
 }
 
 .sidebar-header {
@@ -57,14 +75,24 @@
   color: #ff40ff;
 }
 
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* Card-like structure for collapsible sections */
 .profile-card {
-  background-color: #f9f9f9;
+  background: white;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-card h3 {
@@ -76,7 +104,13 @@
 }
 
 .profile-card h3:hover {
-  color: #ff40ff;
+  color: #d408f8;
+}
+
+.profile-card h2 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 
 .collapsible-content {
@@ -134,3 +168,67 @@
   color: #7a00ff;
   text-decoration: underline;
 }
+
+.profile-section {
+  padding: 20px;
+}
+
+.profile-section h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saved-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.saved-title {
+  font-size: 1.2em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.start-learning-button {
+  background-color: #eb31e8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.start-learning-button:hover {
+  background-color: #c710d8;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #cc0000;
+}
+

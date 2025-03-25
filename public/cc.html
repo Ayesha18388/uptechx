@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      background-color: #2E86C1;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+    }
+
+    .course h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .course a {
+      text-decoration: none;
+      color: #2E86C1;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .course a:hover {
+      color: #1F6F9F;
+    }
+
+    .level {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .course button {
+      background-color: #2E86C1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .course button:hover {
+      background-color: #1F6F9F;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category">
+      Cloud Computing Courses
+    </div>
+
+    <div class="courses-list">
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/cloud-computing" target="_blank">Introduction to Cloud Computing</a></h3>
+        <p>This beginner-level course introduces the core concepts of cloud computing, its benefits, and key technologies.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/cloud-computing', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect" target="_blank">AWS Certified Solutions Architect - Associate</a></h3>
+        <p>This intermediate-level course prepares you for the AWS Solutions Architect - Associate certification exam.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/gcp-fundamentals" target="_blank">Google Cloud Fundamentals: Core Infrastructure</a></h3>
+        <p>Learn the basics of Google Cloud Platform (GCP) and its core infrastructure in this beginner-level course.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/gcp-fundamentals', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/specializations/google-cloud-database-engineer" target="_blank">Google Cloud Database Engineer Specialization</a></h3>
+        <p>Specialize in Google Cloud databases and prepare for database engineering roles with this intermediate-level course.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/specializations/google-cloud-database-engineer', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/microsoft-azure-cloud-services" target="_blank">Azure Cloud Services</a></h3>
+        <p>This intermediate-level course covers the fundamentals of Azure Cloud services, including infrastructure management.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/learn/microsoft-azure-cloud-services', '_blank')">Start Learning</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

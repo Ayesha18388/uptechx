@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      background-color: #240987;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+    }
+
+    .course h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .course a {
+      text-decoration: none;
+      color: #2b28d8;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .course a:hover {
+      color: #4132c7;
+    }
+
+    .level {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .course button {
+      background-color: #1a0cba;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .course button:hover {
+      background-color: #4c2bdf;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category">
+      DevOps Courses
+    </div>
+
+    <div class="courses-list">
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/intro-to-devops?" target="_blank">Introduction to DevOps</a></h3>
+        <p>This beginner-level course provides an introduction to DevOps principles and practices.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/intro-to-devops?', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/specializations/aws-devops?" target="_blank">DevOps on AWS Specialization</a></h3>
+        <p>Learn to implement DevOps practices using AWS tools in this intermediate-level specialization.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/specializations/aws-devops?', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift?" target="_blank">Introduction to Containers w/ Docker, Kubernetes & OpenShift</a></h3>
+        <p>Get hands-on experience with Docker, Kubernetes, and OpenShift for containerized applications in this intermediate-level course.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift?', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/devops-aws-code-build-test" target="_blank">DevOps, Cloud, and Agile Foundations Specialization</a></h3>
+        <p>This beginner-level specialization covers cloud computing, DevOps, and agile methodologies.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/devops-aws-code-build-test', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/specializations/devops-cloud-and-agile-foundations" target="_blank">DevOps on AWS: Code, Build, and Test</a></h3>
+        <p>This advanced-level specialization focuses on integrating DevOps practices with AWS for building and testing cloud applications.</p>
+        <p class="level">Level: Advanced</p>
+        <button onclick="window.open('https://www.coursera.org/specializations/devops-cloud-and-agile-foundations', '_blank')">Start Learning</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

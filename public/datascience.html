@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      background-color: #5107fd;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+    }
+
+    .course h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .course a {
+      text-decoration: none;
+      color: #4f1dcc;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .course a:hover {
+      color: #1811f2;
+    }
+    
+    .level {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .course button {
+      background-color: #5107fd;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .course button:hover {
+      background-color: #1811f2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category">
+      Data Science
+    </div>
+
+    <div class="courses-list">
+      <div class="course">
+        <h3><a href="https://www.coursera.org/specializations/jhu-data-science" target="_blank">Data Science Specialization by Johns Hopkins University</a></h3>
+        <p>This intermediate-level specialization covers a range of data science topics from data cleaning to machine learning.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/specializations/jhu-data-science', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" target="_blank">Python for Data Science, AI & Development</a></h3>
+        <p>A beginner-friendly course to learn Python, focusing on data science, AI, and development applications.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/python-for-applied-data-science-ai', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/specializations/introduction-data-science" target="_blank">Introduction to Data Science Specialization</a></h3>
+        <p>This beginner-level specialization introduces data science principles using tools like Python and R.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/specializations/introduction-data-science', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" target="_blank">Python for Data Science, AI & Development (Udemy)</a></h3>
+        <p>This intermediate course teaches Python specifically for data science and machine learning applications.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/specializations/data-science-foundations-r" target="_blank">Data Science: Foundations using R Specialization</a></h3>
+        <p>An intermediate-level specialization teaching data science foundations using R, covering data analysis and visualization.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/specializations/data-science-foundations-r', '_blank')">Start Learning</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

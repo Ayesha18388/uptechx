@@ -1,4 +1,7 @@
+
+// eslint-disable-next-line
 import React, { useState } from "react";
+
 import "./Scholarships.css";
 import { FaBookmark, FaRegBookmark } from "react-icons/fa"; // Import save icons
 
@@ -246,18 +249,16 @@ const scholarships = [
       },
       ];
     
-const Scholarships = () => {
-  const [savedItems, setSavedItems] = useState([]); // State to track saved items
-
-  // Handle save functionality
+const Scholarships = ({ savedItems, setSavedItems }) => {
   const toggleSave = (item) => {
+    let updatedSavedItems;
     if (savedItems.some((saved) => saved.id === item.id)) {
-      // Remove item if already saved
-      setSavedItems(savedItems.filter((saved) => saved.id !== item.id));
+      updatedSavedItems = savedItems.filter((saved) => saved.id !== item.id);
     } else {
-      // Add item to saved list
-      setSavedItems([...savedItems, item]);
+      updatedSavedItems = [...savedItems, item];
     }
+    setSavedItems(updatedSavedItems);
+    localStorage.setItem("savedItems", JSON.stringify(updatedSavedItems)); // Persist saved items in local storage
   };
 
   return (

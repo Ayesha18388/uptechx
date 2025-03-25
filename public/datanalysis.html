@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analysis Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      background-color: #3f51b5;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+    }
+
+    .course h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .course a {
+      text-decoration: none;
+      color: #3f51b5;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .course a:hover {
+      color: #303f9f;
+    }
+
+    .level {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .course button {
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .course button:hover {
+      background-color: #303f9f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category">
+      Data Analysis Courses
+    </div>
+
+    <div class="courses-list">
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/data-analysis-with-python" target="_blank">Data Analysis with Python</a></h3>
+        <p>Learn the fundamentals of data analysis using Python in this beginner-level course.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/data-analysis-with-python', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst" target="_blank">Microsoft Power BI Data Analyst Professional Certificate</a></h3>
+        <p>Get certified as a Power BI Data Analyst through this beginner-level professional certification program.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/learn/microsoft-data-analysis-visualization-with-python" target="_blank">Data Analysis and Visualization with Python</a></h3>
+        <p>Learn to perform data analysis and visualization using Python in this beginner-level course.</p>
+        <p class="level">Level: Beginner</p>
+        <button onclick="window.open('https://www.coursera.org/learn/microsoft-data-analysis-visualization-with-python', '_blank')">Start Learning</button>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">Google Data Analytics</a></h3>
+        <p>Gain essential skills in data analytics through this intermediate-level professional certification program by Google.</p>
+        <p class="level">Level: Intermediate</p>
+        <button onclick="window.open('https://www.coursera.org/professional-certificates/google-data-analytics', '_blank')">Start Learning</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

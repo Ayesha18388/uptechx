@@ -14,6 +14,9 @@ import Cheatsheets from "./components/Cheatsheets";
 import DSAandAptitude from "./components/DSAandAptitude";
 import { searchData } from "./components/searchData"; // Import searchData
 import ProfileSaved from "./components/ProfileSaved";
+import WebDevelopmentCheatsheets from "./components/WebDevelopmentCheatsheets"; // Import the new component
+import FullstackDevelopment from "./components/FullstackDevelopment"; // Import the new component
+
 
 const App = () => {
   const [savedItems, setSavedItems] = useState([]); // Shared state for saved items
@@ -40,6 +43,9 @@ const App = () => {
         <Route path="/cheatsheets" element={<Cheatsheets />} />
         <Route path="/dsa-and-aptitude" element={<DSAandAptitude />} />
         <Route path="/profile-saved" element={<ProfileSaved savedItems={savedItems} />} />
+        <Route path="/cheatsheets/web-development" element={<WebDevelopmentCheatsheets />} /> {/* Add this line */}
+        <Route path="/cheatsheets/full-stack-development" element={<FullstackDevelopment />} /> {/* Add this line */}
+
       </Routes>
       <Footer /> {/* Include Footer */}
     </Router>
@@ -47,4 +53,3 @@ const App = () => {
 };
 
 export default App;
-clear

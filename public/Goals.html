@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+
+        .goals-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: pink;
+        }
+
+        .goals-section h2 {
+            font-size: 34px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .goals-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .goals-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .goal-card {
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            width: 320px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .goal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .goal-icon {
+            font-size: 55px;
+            color: #6c63ff;
+            margin-bottom: 15px;
+        }
+
+        .goal-card h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .goal-card p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .goals-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="goals-section">
+        <h2>Our Goals</h2>
+        <p>At UpTechX, we are committed to empowering learners through accessible, high-quality education, fostering innovation, and creating a thriving global tech community. We believe in equipping individuals with the skills they need to succeed in the ever-evolving technology landscape.</p>
+        
+        <div class="goals-container">
+            <div class="goal-card">
+                <div class="goal-icon">📚</div>
+                <h3>Quality Learning for All</h3>
+                <p>We aim to provide free, high-quality learning resources that help individuals build strong foundations in technology, programming, and career-oriented skills.</p>
+            </div>
+            
+            <div class="goal-card">
+                <div class="goal-icon">🚀</div>
+                <h3>Encouraging Innovation</h3>
+                <p>By organizing hackathons, events, and hands-on projects, we nurture creativity and problem-solving skills, enabling students and professionals to think beyond traditional solutions.</p>
+            </div>
+
+            <div class="goal-card">
+                <div class="goal-icon">🌍</div>
+                <h3>Building a Global Tech Community</h3>
+                <p>We strive to create an inclusive platform where learners, mentors, and professionals can collaborate, share knowledge, and grow together in the rapidly evolving digital world.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

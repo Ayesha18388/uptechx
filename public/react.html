@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      background-color: #2196f3;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.05);
+    }
+
+    .course h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .course a {
+      text-decoration: none;
+      color: #2196f3;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .course a:hover {
+      color: #1565c0;
+    }
+
+    .level {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="category">
+      React Courses
+    </div>
+
+    <div class="courses-list">
+      <div class="course">
+        <h3><a href="https://www.freecodecamp.org/learn/front-end-libraries/react/" target="_blank">React - FreeCodeCamp</a></h3>
+        <p>A beginner-level course introducing React, including its fundamental concepts and practices.</p>
+        <p class="level">Level: Beginner</p>
+      </div>
+
+      <div class="course">
+        <h3><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">React - The Complete Guide (incl Hooks, React Router, Redux)</a></h3>
+        <p>An intermediate course that covers the complete React ecosystem, including Redux and React Router.</p>
+        <p class="level">Level: Intermediate</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

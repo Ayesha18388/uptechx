@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./Navbar.css"; // Import custom CSS for styling
 import logo from "./logo.png"; // Import the logo into Navbar.js
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   const [searchTerm, setSearchTerm] = useState(""); // State for search input
   const [searchResults, setSearchResults] = useState([]); // Stores matched search results
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
@@ -20,7 +20,9 @@ const Navbar = () => {
   }, []);
 
   // Handle input change
+ // eslint-disable-next-line
   const handleSearchChange = (event) => {
+    // eslint-disable-next-line
     const value = event.target.value;
     setSearchTerm(value);
 
@@ -162,7 +164,7 @@ const Navbar = () => {
               </button>
               <FaUserCircle
                 className="profile-icon mx-3"
-                onClick={() => navigate("/profile")}
+                onClick={toggleSidebar}
               />
             </>
           ) : (
