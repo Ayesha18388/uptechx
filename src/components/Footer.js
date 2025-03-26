@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           {/* Free Top Courses */}
-          <div className="col-md-3 col-6 footer-section">
+          <div className="col-md-3 col- 6 footer-section">
             <h3>FREE TOP COURSES</h3>
             <ul>
               <li><a href="ai.html">AI</a></li>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
          
           {/* Languages */}
-          <div className="col-md-2 col-6 footer-section">
+          <div className="col-md-3 col-6 footer-section">
             <h3>LANGUAGES</h3>
             <ul>
             <li><a href="https://www.geeksforgeeks.org/python-programming-language-tutorial/" target="_blank" rel="noopener noreferrer">Python</a></li> 
@@ -44,7 +44,7 @@ const Footer = () => {
           
 
           {/* Cheatsheets */}
-          <div className="col-md-2 col-6 footer-section">
+          <div className="col-md-3  col-6 footer-section">
             <h3>CHEATSHEETS</h3>
             <ul>
               <li><Link to="/cheatsheets/web-development">Web Development</Link></li>

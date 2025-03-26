@@ -3,152 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Section</title>
+    <title>UptechX FAQs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f9f9f9;
         }
-        .faq-container {
-            max-width: 600px;
+        .container {
+            width: 80%;
             margin: auto;
-            background: white;
             padding: 20px;
-            border-radius: 8px;
+            background: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
         }
-        .faq-item {
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
+        h1 {
+            text-align: center;
+            color: #333;
         }
-        .faq-item:last-child {
-            border-bottom: none;
+        .faq-section {
+            margin-bottom: 20px;
         }
-        .faq-question {
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px;
+        .faq-section h2 {
             background: #007BFF;
             color: white;
+            padding: 10px;
             border-radius: 5px;
-            display: block;
-            text-decoration: none;
+            cursor: pointer;
         }
-        .faq-answer {
+        .faq-section .content {
+            display: none;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            background: #f1f1f1;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .answer {
             display: none;
             padding: 10px;
             background: #f1f1f1;
-            margin-top: 5px;
             border-radius: 5px;
-        }
-        input[type="checkbox"] {
-            display: none;
-        }
-        input[type="checkbox"]:checked + .faq-answer {
-            display: block;
+            margin-top: 5px;
         }
     </style>
+    <script>
+        function toggleContent(event) {
+            const content = event.nextElementSibling;
+            if (content) {
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            }
+        }
+    </script>
 </head>
 <body>
-    <div class="faq-container">
-        <div class="faq-item">
-            <label class="faq-question" for="faq1">What is PHP?</label>
-            <input type="checkbox" id="faq1">
-            <div class="faq-answer">PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language.</div>
+    <div class="container">
+        <h1>Frequently Asked Questions (FAQs)</h1>
+        
+        <div class="faq-section">
+            <h2 onclick="toggleContent(this)">General FAQs</h2>
+            <div class="content">
+                <p class="question" onclick="toggleContent(this)">What is UptechX?</p>
+                <p class="answer">UptechX is an open-source platform that provides free courses, scholarships, hackathon notifications, tech events, emerging technology news, cheat sheets, and DSA & Aptitude resources.</p>
+                
+                <p class="question" onclick="toggleContent(this)">Who created UptechX?</p>
+                <p class="answer">UptechX was created by Ayesha Siddiqua and Kulsum Parveen as a platform to provide valuable resources to students and tech enthusiasts for free.</p>
+                
+                <p class="question" onclick="toggleContent(this)">Is UptechX free to use?</p>
+                <p class="answer">Yes, UptechX is completely free. Our goal is to make tech education accessible to everyone.</p>
+                
+                <p class="question" onclick="toggleContent(this)">Do I need to sign up to use UptechX?</p>
+                <p class="answer">You can browse most content without signing up, but to save items, track progress, and access some features, an account is required.</p>
+                
+                <p class="question" onclick="toggleContent(this)">How can I contribute to UptechX?</p>
+                <p class="answer">You can contribute by sharing resources, reporting bugs, giving feedback, or collaborating on our open-source GitHub repository.</p>
+            </div>
         </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq1">What is HTML?</label>
-            <input type="checkbox" id="faq1">
-            <div class="faq-answer">HTML (HyperText Markup Language) is the standard language for creating web pages.</div>
+        
+        <div class="faq-section">
+            <h2 onclick="toggleContent(this)">Technical & Learning FAQs</h2>
+            <div class="content">
+                <p class="question" onclick="toggleContent(this)">What programming languages should I learn first?</p>
+                <p class="answer">If you are a beginner, start with Python or JavaScript. If you are interested in system programming, learn C or C++.</p>
+                
+                <p class="question" onclick="toggleContent(this)">What is the best way to learn Data Structures and Algorithms (DSA)?</p>
+                <p class="answer">Start with basic concepts like arrays and linked lists, then move on to trees, graphs, and dynamic programming. Solve problems on platforms like LeetCode, CodeChef, and GeeksforGeeks.</p>
+                
+                <p class="question" onclick="toggleContent(this)">What is Tailwind CSS, and why should I use it?</p>
+                <p class="answer">Tailwind CSS is a utility-first CSS framework that helps you design quickly without writing custom CSS. It’s great for building modern web applications with minimal effort.</p>
+                
+                <p class="question" onclick="toggleContent(this)">What is React, and why is it popular?</p>
+                <p class="answer">React is a JavaScript library for building user interfaces. It is popular because of its component-based structure, reusability, and efficient updates using the virtual DOM.</p>
+                
+                <p class="question" onclick="toggleContent(this)">How can I start web development?</p>
+                <p class="answer">Begin with HTML, CSS, and JavaScript. Once comfortable, learn frameworks like React, Next.js, and backend technologies like Node.js or Django.</p>
+            </div>
         </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq2">What is CSS?</label>
-            <input type="checkbox" id="faq2">
-            <div class="faq-answer">CSS (Cascading Style Sheets) is used to style and layout web pages.</div>
+        <div class="faq-section">
+            <h2 onclick="toggleContent(this)">Hackathons & Events FAQs </h2>
+            <div class="content">
+                <p class="question" onclick="toggleContent(this)">How can I participate in hackathons?</p>
+                <p class="answer">Check our “Hackathons & Events” page for upcoming hackathons. Register, form a team, and start building innovative solutions.</p>
+                
+                <p class="question" onclick="toggleContent(this)">What is the benefit of participating in hackathons?</p>
+                <p class="answer">Hackathons improve problem-solving, teamwork, and coding skills. They also help in networking and can lead to job opportunities.</p>
+                
+                <p class="question" onclick="toggleContent(this)">What is an Open Source contribution?</p>
+                <p class="answer">Contributing to open-source means improving public projects by adding features, fixing bugs, or writing documentation.</p>
+                
+                <p class="question" onclick="toggleContent(this)">How do I start with open-source contributions?</p>
+                <p class="answer">Find beginner-friendly projects on GitHub, read the contributing guidelines, and start with small bug fixes or documentation updates.</p>
+                
+                <p class="question" onclick="toggleContent(this)">15. What are some top tech events to attend?</p>
+                <p class="answer">Google I/O, Microsoft Build, AWS re:Invent, GitHub Universe, and local developer meetups are great events to attend.</p>
+            </div>
         </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq3">What is JavaScript?</label>
-            <input type="checkbox" id="faq3">
-            <div class="faq-answer">JavaScript is a programming language that allows you to implement complex features on web pages.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq4">What is Data Science?</label>
-            <input type="checkbox" id="faq4">
-            <div class="faq-answer">Data Science is an interdisciplinary field that uses statistical, mathematical, and computational techniques to extract insights from data.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq5">What is Data Analysis?</label>
-            <input type="checkbox" id="faq5">
-            <div class="faq-answer">Data Analysis is the process of inspecting, cleansing, transforming, and modeling data to discover useful information.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq6">What is ChatGPT?</label>
-            <input type="checkbox" id="faq6">
-            <div class="faq-answer">ChatGPT is an AI-powered chatbot developed by OpenAI that uses deep learning techniques to generate human-like responses.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq7">What is DevOps?</label>
-            <input type="checkbox" id="faq7">
-            <div class="faq-answer">DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to improve the software development lifecycle.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq8">What is Big Data?</label>
-            <input type="checkbox" id="faq8">
-            <div class="faq-answer">Big Data refers to large, complex datasets that require specialized tools and techniques for processing and analysis.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq9">What is Web Development?</label>
-            <input type="checkbox" id="faq9">
-            <div class="faq-answer">Web Development is the process of creating websites and web applications using various technologies such as HTML, CSS, JavaScript, and frameworks.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq10">What is Python?</label>
-            <input type="checkbox" id="faq10">
-            <div class="faq-answer">Python is a high-level programming language known for its readability and versatility, widely used in web development, data science, and automation.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq11">What is Ruby?</label>
-            <input type="checkbox" id="faq11">
-            <div class="faq-answer">Ruby is a dynamic, object-oriented programming language known for its simplicity and productivity, often used in web development.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq12">What is C++?</label>
-            <input type="checkbox" id="faq12">
-            <div class="faq-answer">C++ is a high-performance programming language commonly used in system software, game development, and embedded systems.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq13">What is C programming?</label>
-            <input type="checkbox" id="faq13">
-            <div class="faq-answer">C is a powerful general-purpose programming language known for its efficiency and control over system resources.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq14">What is Java?</label>
-            <input type="checkbox" id="faq14">
-            <div class="faq-answer">Java is a widely-used programming language known for its portability, robustness, and extensive use in enterprise applications.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq2">What is Generative AI?</label>
-            <input type="checkbox" id="faq2">
-            <div class="faq-answer">Generative AI refers to artificial intelligence models that can generate text, images, audio, and other media based on input data.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq3">What is Cyber Security?</label>
-            <input type="checkbox" id="faq3">
-            <div class="faq-answer">Cyber Security is the practice of protecting systems, networks, and programs from digital attacks and unauthorized access.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq4">What is DSA?</label>
-            <input type="checkbox" id="faq4">
-            <div class="faq-answer">DSA (Data Structures and Algorithms) is a fundamental concept in computer science that involves organizing data efficiently and implementing algorithms to solve problems.</div>
-        </div>
-        <div class="faq-item">
-            <label class="faq-question" for="faq5">What is a Software Developer?</label>
-            <input type="checkbox" id="faq5">
-            <div class="faq-answer">A Software Developer is a professional who designs, develops, tests, and maintains software applications using programming languages and development tools.</div>
-        </div>
-
     </div>
 </body>
 </html>
