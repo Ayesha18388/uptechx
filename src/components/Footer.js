@@ -101,7 +101,7 @@ const Footer = () => {
             <ul>
               <li><a href="/FAQ.html">FAQ</a></li> {/* Use anchor tag */}
             </ul>
-          </div>
+          </div>''
         </div>
 
         {/* Social Media Icons */}
