@@ -679,6 +679,10 @@ const Courses = () => {
       setSavedItems([...savedItems, item]);
     }
   };
+  // Function to handle button click (open link in a new tab)
+  const handleButtonClick = (url) => {
+    window.open(url, '_blank');
+  };
 
   return (
     <section className="courses-section">
@@ -705,9 +709,13 @@ const Courses = () => {
                     </button>
                   </div>
                   <p>{course.level}</p>
-                  <a href={course.link} target="_blank" rel="noopener noreferrer">
-                    {course.link}
-                  </a>
+                  <button
+                    className="course-button"
+                    onClick={() => handleButtonClick(course.link)}
+                  >
+                    Start Learning
+                   
+                  </button>
                 </div>
               ))}
             </div>

@@ -135,35 +135,22 @@
   padding: 0;
 }
 
-.start-learning-btn {
+.course-button {
   background-color: #f50bce;
   color: white;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   margin-top: 10px;
   font-weight: 500;
   transition: background-color 0.2s;
 }
 
-.start-learning-btn:hover {
-  background-color: #f50bce;
+.course-button:hover {
+  background-color: #e31ac2;
 }
 
-.start-learning-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
 
-.start-learning-button:hover {
-  background-color: #0056b3;
-}
+
