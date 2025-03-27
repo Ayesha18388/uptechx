@@ -1,0 +1,812 @@
+{
+  "courses": [
+    {
+      "category": "Artificial Intelligence (AI)",
+      "courses": [
+        {
+          "id": 1,
+          "title": "AI for Everyone by Andrew Ng",
+          "description": "Learn the basics of AI and its applications.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/ai-for-everyone"
+        },
+        {
+          "id": 2,
+          "title": "Elements of AI",
+          "description": "A free online course on the basics of AI.",
+          "level": "Beginner",
+          "link": "https://www.elementsofai.com/"
+        },
+        {
+          "id": 3,
+          "title": "Introduction to AI",
+          "description": "Learn the fundamentals of Artificial Intelligence.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/introduction-to-ai"
+        },
+        {
+          "id": 4,
+          "title": "AI For Business Specialization",
+          "description": "Learn how AI is applied in business scenarios.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/ai-for-business-wharton"
+        },
+        {
+          "id": 5,
+          "title": "AI in Practice: Machine Learning & Deep Learning",
+          "description": "Hands-on AI projects with machine learning and deep learning.",
+          "level": "Intermediate",
+          "link": "https://www.udemy.com/course/ai-in-practice/"
+        }
+      ]
+    },
+    {
+      "category": "Data Science",
+      "courses": [
+        {
+          "id": 6,
+          "title": "Data Science Specialization by Johns Hopkins University",
+          "description": "Learn data science concepts and techniques from Johns Hopkins University.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/jhu-data-science"
+        },
+        {
+          "id": 7,
+          "title": "Python for Data Science, AI & Development",
+          "description": "Learn Python programming for data science, AI, and development.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+        },
+        {
+          "id": 8,
+          "title": "Introduction to Data Science Specialization",
+          "description": "An introductory specialization to data science concepts and tools.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/specializations/introduction-data-science"
+        },
+        {
+          "id": 9,
+          "title": "Python for Data Science, AI & Development",
+          "description": "Master Python for data science and machine learning.",
+          "level": "Intermediate",
+          "link": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+        },
+        {
+          "id": 10,
+          "title": "Data Science: Foundations using R Specialization",
+          "description": "Learn data science foundations using R programming.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/data-science-foundations-r"
+        }
+      ]
+    },
+    {
+      "category": "React.js, Next.js, Tailwind CSS, TypeScript",
+      "courses": [
+        {
+          "id": 11,
+          "title": "React - FreeCodeCamp",
+          "description": "Learn React from FreeCodeCamp.",
+          "level": "Beginner",
+          "link": "https://www.freecodecamp.org/learn/front-end-libraries/react/"
+        },
+        {
+          "id": 12,
+          "title": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+          "description": "Master React with hooks, Redux, and more.",
+          "level": "Intermediate",
+          "link": "https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+        },
+        {
+          "id": 13,
+          "title": "Next.js & React - The Complete Guide",
+          "description": "Learn Next.js and React for building modern web applications.",
+          "level": "Intermediate",
+          "link": "https://www.udemy.com/course/nextjs-react-the-complete-guide/"
+        },
+        {
+          "id": 14,
+          "title": "Introduction to Next.js",
+          "description": "Learn the basics of Next.js for server-side rendering.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/introduction-to-next-js"
+        },
+        {
+          "id": 15,
+          "title": "Tailwind CSS From Scratch",
+          "description": "Learn Tailwind CSS by building projects from scratch.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/packt-tailwind-css-from-scratch-learn-by-building-projects-1xy4y"
+        },
+        {
+          "id": 16,
+          "title": "Tailwind CSS Practice Projects",
+          "description": "Hands-on projects to master Tailwind CSS.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/tailwind-css-practice-project"
+        },
+        {
+          "id": 17,
+          "title": "Understanding TypeScript",
+          "description": "Learn TypeScript from scratch and understand its features.",
+          "level": "Beginner",
+          "link": "https://www.udemy.com/course/understanding-typescript/"
+        },
+        {
+          "id": 18,
+          "title": "TypeScript String Properties and Methods",
+          "description": "Learn TypeScript string properties and methods through projects.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/projects/typescript-string-properties-and-methods"
+        }
+      ]
+    },
+    {
+      "category": "ChatGPT",
+      "courses": [
+        {
+          "id": 19,
+          "title": "Prompt Engineering for ChatGPT",
+          "description": "Learn how to craft effective prompts for ChatGPT.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/prompt-engineering"
+        },
+        {
+          "id": 20,
+          "title": "ChatGPT Prompt Engineering for Developers",
+          "description": "A project-based course for developers using ChatGPT.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/projects/chatgpt-prompt-engineering-for-developers-project"
+        },
+        {
+          "id": 21,
+          "title": "GPT (Generative Pre-trained Transformers)",
+          "description": "Learn the basics of GPT and its applications.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/chatgpt"
+        },
+        {
+          "id": 22,
+          "title": "ChatGPT for Project Management",
+          "description": "Learn how to use ChatGPT for project management and execution.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/chatgpt-project-management-execution"
+        },
+        {
+          "id": 23,
+          "title": "ChatGPT & Generative AI for Data Analytics",
+          "description": "Learn how to use ChatGPT and generative AI for data analytics.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/chatgpt-for-data-analytics"
+        }
+      ]
+    },
+    {
+      "category": "Generative AI",
+      "courses": [
+        {
+          "id": 24,
+          "title": "Generative Adversarial Networks (GANs) Specialization",
+          "description": "Learn about GANs and their applications.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/generative-adversarial-networks"
+        },
+        {
+          "id": 25,
+          "title": "Generative AI: Impact, Considerations, and Ethical Issues",
+          "description": "Explore the ethical implications and considerations of generative AI.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/generative-ai-ethical-considerations-and-implications"
+        },
+        {
+          "id": 26,
+          "title": "Generative Models for Deep Learning",
+          "description": "Learn about generative models for deep learning.",
+          "level": "Advanced",
+          "link": "https://www.udacity.com/course/generative-models-for-deep-learning--ud741"
+        },
+        {
+          "id": 27,
+          "title": "IBM Deep Learning with PyTorch, Keras and Tensorflow",
+          "description": "Master deep learning with PyTorch, Keras, and TensorFlow.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/professional-certificates/ibm-deep-learning-with-pytorch-keras-tensorflow"
+        },
+        {
+          "id": 28,
+          "title": "Introduction to Generative AI",
+          "description": "Learn the basics of generative AI and its applications.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/introduction-to-generative-ai"
+        }
+      ]
+    },
+    {
+      "category": "Data Analysis",
+      "courses": [
+        {
+          "id": 29,
+          "title": "Data Analysis with Python",
+          "description": "Learn data analysis using Python programming.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/data-analysis-with-python"
+        },
+        {
+          "id": 30,
+          "title": "Microsoft Power BI Data Analyst Professional Certificate",
+          "description": "Master data analysis and visualization using Microsoft Power BI.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst"
+        },
+        {
+          "id": 31,
+          "title": "Data Analysis and Visualization with Python",
+          "description": "Learn data analysis and visualization techniques using Python.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/microsoft-data-analysis-visualization-with-python"
+        },
+        {
+          "id": 32,
+          "title": "Google Data Analytics",
+          "description": "Learn data analytics skills with Google's professional certificate.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/professional-certificates/google-data-analytics"
+        }
+      ]
+    },
+    {
+      "category": "Programming Languages",
+      "courses": [
+        {
+          "id": 33,
+          "title": "Learn Python Programming",
+          "description": "Learn Python programming from scratch.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/python-crash-course"
+        },
+        {
+          "id": 34,
+          "title": "Learn C++ Programming",
+          "description": "Master the basics of C++ programming.",
+          "level": "Beginner",
+          "link": "https://www.codecademy.com/learn/learn-c-plus-plus"
+        },
+        {
+          "id": 35,
+          "title": "Java Programming for Beginners",
+          "description": "Learn Java programming for beginners.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/fundamentals-of-java-programming"
+        },
+        {
+          "id": 36,
+          "title": "Learn PHP Programming",
+          "description": "Learn PHP programming for web development.",
+          "level": "Beginner",
+          "link": "https://www.codecademy.com/learn/learn-php"
+        },
+        {
+          "id": 37,
+          "title": "Learn R Programming",
+          "description": "Learn R programming for data analysis.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/r-programming?"
+        }
+      ]
+    },
+    {
+      "category": "Cloud Computing",
+      "courses": [
+        {
+          "id": 38,
+          "title": "Introduction to Cloud Computing",
+          "description": "Learn the basics of cloud computing and its applications.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/cloud-computing"
+        },
+        {
+          "id": 39,
+          "title": "AWS Certified Solutions Architect - Associate",
+          "description": "Prepare for the AWS Solutions Architect certification.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect"
+        },
+        {
+          "id": 40,
+          "title": "Google Cloud Fundamentals: Core Infrastructure",
+          "description": "Learn the fundamentals of Google Cloud infrastructure.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/gcp-fundamentals"
+        },
+        {
+          "id": 41,
+          "title": "Google Cloud Database Engineer Specialization",
+          "description": "Master database engineering on Google Cloud.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/google-cloud-database-engineer"
+        },
+        {
+          "id": 42,
+          "title": "Azure Cloud Services",
+          "description": "Learn about Microsoft Azure cloud services.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/microsoft-azure-cloud-services?"
+        }
+      ]
+    },
+    {
+      "category": "Web Development",
+      "courses": [
+        {
+          "id": 43,
+          "title": "Responsive Web Design",
+          "description": "Learn how to create responsive web designs.",
+          "level": "Beginner",
+          "link": "https://www.freecodecamp.org/learn/responsive-web-design/"
+        },
+        {
+          "id": 44,
+          "title": "Introduction to Web Development",
+          "description": "Learn the basics of web development.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/web-development"
+        },
+        {
+          "id": 45,
+          "title": "Web Design for Everybody",
+          "description": "Learn web design concepts for everyone.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/specializations/web-design"
+        },
+        {
+          "id": 46,
+          "title": "Introduction to CSS3",
+          "description": "Learn CSS3 for styling web pages.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/introcss"
+        },
+        {
+          "id": 47,
+          "title": "IBM Front-End Developer Professional Certificate",
+          "description": "Become a certified front-end developer with IBM.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/professional-certificates/ibm-frontend-developer"
+        }
+      ]
+    },
+    {
+      "category": "Full Stack Development",
+      "courses": [
+        {
+          "id": 48,
+          "title": "IBM Full Stack Software Developer",
+          "description": "Learn full-stack development with IBM's professional certificate.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer"
+        },
+        {
+          "id": 49,
+          "title": "IBM Full-Stack JavaScript Developer",
+          "description": "Master full-stack JavaScript development with IBM.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer?"
+        },
+        {
+          "id": 50,
+          "title": "Full-Stack DApp Development with React and Web3",
+          "description": "Learn to build decentralized applications with React and Web3.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/packt-full-stack-dapp-development-with-react-and-web3-605x4"
+        },
+        {
+          "id": 51,
+          "title": "Java FullStack Developer Specialization",
+          "description": "Specialize in full-stack development using Java.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/java-fullstack"
+        },
+        {
+          "id": 52,
+          "title": "Meta Front-End Developer",
+          "description": "Become a front-end developer with Meta's professional certificate.",
+          "level": "Advanced",
+          "link": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
+        }
+      ]
+    },
+    {
+      "category": "AWS (Amazon Web Services)",
+      "courses": [
+        {
+          "id": 53,
+          "title": "AWS Skill Builder Learner Guide",
+          "description": "Learn the basics of AWS with the Skill Builder guide.",
+          "level": "Beginner",
+          "link": "https://explore.skillbuilder.aws/learn/courses/18443/aws-skill-builder-learner-guide"
+        },
+        {
+          "id": 54,
+          "title": "Foundations of Prompt Engineering",
+          "description": "Learn the foundations of prompt engineering on AWS.",
+          "level": "Beginner",
+          "link": "https://explore.skillbuilder.aws/learn/courses/17763/foundations-of-prompt-engineering"
+        },
+        {
+          "id": 55,
+          "title": "Building Language Models on AWS",
+          "description": "Learn how to build language models on AWS.",
+          "level": "Intermediate",
+          "link": "https://explore.skillbuilder.aws/learn/courses/17556/building-language-models-on-aws"
+        },
+        {
+          "id": 56,
+          "title": "Amazon Bedrock Getting Started",
+          "description": "Get started with Amazon Bedrock for generative AI.",
+          "level": "Intermediate",
+          "link": "https://explore.skillbuilder.aws/learn/courses/17508/amazon-bedrock-getting-started"
+        },
+        {
+          "id": 57,
+          "title": "AWS for Games: Cloud Game Development",
+          "description": "Learn cloud game development with AWS for Games.",
+          "level": "Advanced",
+          "link": "https://explore.skillbuilder.aws/learn/learning-plans/1570/aws-for-games-cloud-game-development-knowledge-badge-readiness-path"
+        }
+      ]
+    },
+    {
+      "category": "DevOps",
+      "courses": [
+        {
+          "id": 58,
+          "title": "Introduction to DevOps",
+          "description": "Learn the basics of DevOps and its practices.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/intro-to-devops?"
+        },
+        {
+          "id": 59,
+          "title": "DevOps on AWS Specialization",
+          "description": "Master DevOps practices on AWS with this specialization.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/aws-devops?"
+        },
+        {
+          "id": 60,
+          "title": "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+          "description": "Learn containerization with Docker, Kubernetes, and OpenShift.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift?"
+        },
+        {
+          "id": 61,
+          "title": "DevOps, Cloud, and Agile Foundations Specialization",
+          "description": "Learn the foundations of DevOps, cloud, and agile practices.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/devops-aws-code-build-test"
+        },
+        {
+          "id": 62,
+          "title": "DevOps on AWS: Code, Build, and Test",
+          "description": "Learn how to code, build, and test using AWS DevOps tools.",
+          "level": "Advanced",
+          "link": "https://www.coursera.org/specializations/devops-cloud-and-agile-foundations"
+        }
+      ]
+    },
+    {
+      "category": "UI/UX Design",
+      "courses": [
+        {
+          "id": 63,
+          "title": "UI / UX Design Specialization",
+          "description": "Learn the fundamentals of UI/UX design with this specialization.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/specializations/ui-ux-design?"
+        },
+        {
+          "id": 64,
+          "title": "UI/UX Design with Sketch: Travel Booking App",
+          "description": "Learn UI/UX design by creating a travel booking app using Sketch.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/projects/uiux-design-with-sketch-travel-booking-app"
+        },
+        {
+          "id": 65,
+          "title": "Google UX Design Professional Certificate",
+          "description": "Become a certified UX designer with Google's professional certificate.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/google-ux-design"
+        },
+        {
+          "id": 66,
+          "title": "Foundations of User Experience (UX) Design",
+          "description": "Learn the foundations of user experience design.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/foundations-user-experience-design"
+        },
+        {
+          "id": 67,
+          "title": "Designing User Interfaces and Experiences (UI/UX)",
+          "description": "Learn how to design user interfaces and experiences.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/designing-user-interfaces-and-experiences-uiux"
+        }
+      ]
+    },
+    {
+      "category": "Figma, Canva, Adobe",
+      "courses": [
+        {
+          "id": 68,
+          "title": "Learn Figma: User Interface Design",
+          "description": "Learn how to design user interfaces using Figma.",
+          "level": "Beginner",
+          "link": "https://www.freecodecamp.org/news/ai-web-development-tutorial-figma-designs/"
+        },
+        {
+          "id": 69,
+          "title": "Figma for Beginners",
+          "description": "Learn the basics of Figma for scalable mobile app design.",
+          "level": "Beginner",
+          "link": "https://www.freecodecamp.org/news/design-a-scalable-mobile-app-with-figma-variants/"
+        },
+        {
+          "id": 70,
+          "title": "Figma for Designers",
+          "description": "A crash course on Figma for designers.",
+          "level": "Beginner",
+          "link": "https://www.freecodecamp.org/news/figma-crash-course/"
+        },
+        {
+          "id": 71,
+          "title": "Canva Design Masterclass",
+          "description": "Learn to create desktop and mobile-friendly webpages using Canva.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/projects/use-canva-to-create-desktop-and-mobile-friendly-webpages"
+        },
+        {
+          "id": 72,
+          "title": "Adobe Photoshop for Beginners",
+          "description": "Learn the basics of Adobe Photoshop.",
+          "level": "Beginner",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "category": "Cybersecurity",
+      "courses": [
+        {
+          "id": 73,
+          "title": "Introduction to Cyber Security",
+          "description": "Learn the basics of cybersecurity and its importance.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/specializations/intro-cyber-security?"
+        },
+        {
+          "id": 74,
+          "title": "Google Cloud Cybersecurity",
+          "description": "Learn cybersecurity practices with Google Cloud.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/google-cloud-cybersecurity-certificate"
+        },
+        {
+          "id": 75,
+          "title": "Python for Cybersecurity",
+          "description": "Learn how to use Python for cybersecurity applications.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/specializations/pythonforcybersecurity"
+        },
+        {
+          "id": 76,
+          "title": "IBM Cybersecurity Analyst",
+          "description": "Become a cybersecurity analyst with IBM's professional certificate.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/ibm-cybersecurity-analyst"
+        },
+        {
+          "id": 77,
+          "title": "Cybersecurity Operations Fundamentals Specialization",
+          "description": "Learn the fundamentals of cybersecurity operations.",
+          "level": "Advanced",
+          "link": "https://www.coursera.org/specializations/cbrops"
+        }
+      ]
+    },
+    {
+      "category": "Big Data",
+      "courses": [
+        {
+          "id": 78,
+          "title": "Big Data Specialization",
+          "description": "Learn the fundamentals of big data with this specialization.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/specializations/big-data"
+        },
+        {
+          "id": 79,
+          "title": "Introduction to Big Data with Spark and Hadoop",
+          "description": "Learn big data processing with Spark and Hadoop.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/introduction-to-big-data-with-spark-hadoop"
+        },
+        {
+          "id": 80,
+          "title": "Big Data Integration and Processing",
+          "description": "Learn how to integrate and process big data.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/big-data-integration-processing"
+        },
+        {
+          "id": 81,
+          "title": "Big Data, Artificial Intelligence, and Ethics",
+          "description": "Explore the intersection of big data, AI, and ethics.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/big-data-ai-ethics"
+        },
+        {
+          "id": 82,
+          "title": "Big Data Modeling and Management Systems",
+          "description": "Learn how to model and manage big data systems.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/big-data-management"
+        }
+      ]
+    },
+    {
+      "category": "Software Development",
+      "courses": [
+        {
+          "id": 83,
+          "title": "Introduction to Software Development",
+          "description": "Learn the basics of software development.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/introduction-to-software-development"
+        },
+        {
+          "id": 84,
+          "title": "IBM Full Stack Software Developer",
+          "description": "Become a full-stack software developer with IBM's professional certificate.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer?"
+        },
+        {
+          "id": 85,
+          "title": "Microsoft Back-End Developer",
+          "description": "Learn back-end development with Microsoft's professional certificate.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/professional-certificates/microsoft-back-end-developer"
+        },
+        {
+          "id": 86,
+          "title": "Software Engineering Specialization",
+          "description": "Master software engineering concepts with this specialization.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/specializations/software-engineering"
+        },
+        {
+          "id": 87,
+          "title": "Generative AI for Software Development",
+          "description": "Learn how to use generative AI for software development.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/professional-certificates/generative-ai-for-software-development"
+        }
+      ]
+    },
+    {
+      "category": "Data Structures and Algorithms (DSA)",
+      "courses": [
+        {
+          "id": 88,
+          "title": "Data Structures and Algorithm Specialization",
+          "description": "Learn the fundamentals of data structures and algorithms.",
+          "level": "Beginner",
+          "link": "https://www.coursera.org/learn/data-structures"
+        },
+        {
+          "id":89,
+          "title": "Python Data Structures",
+          "description": "Learn data structures using Python.",
+          "level": "Intermediate",
+          "link": "https://www.coursera.org/learn/python-data"
+        },
+        {
+          "id": 90,
+          "title": "Data Structures - GeeksforGeeks",
+          "description": "Comprehensive guide to data structures by GeeksforGeeks.",
+          "level": "Beginner",
+          "link": "https://www.geeksforgeeks.org/data-structures/"
+        },
+        {
+          "id": 91,
+          "title": "Data Structures and Algorithms Nanodegree",
+          "description": "Master data structures and algorithms with this nanodegree.",
+          "level": "Intermediate",
+          "link": "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256"
+        },
+        {
+          "id": 92,
+          "title": "FreeCodeCamp Data Structures & Algorithms",
+          "description": "Learn data structures and algorithms for free with FreeCodeCamp.",
+          "level": "Beginner",
+          "link": "https://www.freecodecamp.org/news/learn-data-structures-and-algorithms/"
+        }
+      ]
+    }
+  ],
+  "cheatsheets": [
+    {
+      "category": "Web Development Cheatsheets",
+      "items": [
+        { "title": "HTML Cheat Sheet", "link": "https://drive.google.com/file/d/1ZSE9-sMpz3t63C1kYsbt6JIf1SR2o3w1/view?usp=drivesdk" },
+        { "title": "CSS Cheat Sheet", "link": "https://drive.google.com/file/d/1ZSV-bA18TpWmsU6Ofv5AhequD6_6oc70/view?usp=drivesdk" },
+        { "title": "JavaScript Cheat Sheet", "link": "https://drive.google.com/file/d/1ZTVt1_cF1NgxdeYEMvzkYtZwAb0CX9Sn/view?usp=drivesdk" },
+        { "title": "React.js Cheat Sheet", "link": "https://drive.google.com/file/d/1ZU4znQ1ivEA0QK74wrb7opiHdMpE92aU/view?usp=drivesdk" },
+        { "title": "Node.js Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXcfrqeSz9ZlisAhv3aqitkZ7ZiNxGZv/view?usp=drivesdk" },
+        { "title": "Tailwind CSS Cheat Sheet", "link": "https://drive.google.com/file/d/1ZWt3ec6hXy-WT0dKyHYszJoBidsTKZzB/view?usp=drivesdk" },
+        { "title": "Next.js Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
+      ]
+    },
+    {
+      "category": "Full Stack Development Cheatsheets",
+      "items": [
+        { "title": "Python Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Java Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "PHP Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Ruby Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
+      ]
+    },
+    {
+      "category": "Security and Deployment Cheatsheets",
+      "items": [
+        { "title": "User Authentication Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Security Practices Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Docker Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "CI/CD Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Cloud Deployment Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
+      ]
+    },
+    {
+      "category": "Advanced Topics Cheatsheets",
+      "items": [
+        { "title": "System Design Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Performance Optimization Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Cyber Security Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "Blockchain Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "NoSQL Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
+        { "title": "MongoDB Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
+      ]
+    }
+  ],
+  "dsaAndAptitude": [
+    {
+      "category": "DSA Roadmap",
+      "items": [
+        { "title": "DSA Roadmap", "link": "https://roadmap.sh/datastructures-and-algorithms" }
+      ]
+    },
+    {
+      "category": "DSA Problems Sheet",
+      "items": [
+        { "title": "DSA sheet by Love Babbar", "link": "https://www.geeksforgeeks.org/dsa-sheet-by-love-babbar/" },
+        { "title": "DSA by Nishanth Chahar", "link": "https://docs.google.com/spreadsheets/d/1kyHfGGaLTzWspcqMUUS5Httmip7t8LJB0P-uPrRLGos/edit?usp=drivesdk" },
+        { "title": "DSA by Shraddha Khapra", "link": "https://docs.google.com/spreadsheets/u/0/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/htmlview" }
+      ]
+    },
+    {
+      "category": "Data Structures and Algorithms",
+      "items": [
+        { "title": "DSA in JAVA", "link": "https://drive.google.com/file/d/1a-Bskv5Ni37-dQoEa-XUitXr9XA0UC6M/view?usp=drivesdk" },
+        { "title": "DSA in C++", "link": "https://drive.google.com/file/d/1a0wGJJTzUM1Kgpua6k_NxYVPW8R5nubN/view?usp=drivesdk" }
+      ]
+    },
+    {
+      "category": "Aptitude",
+      "items": [
+        { "title": "Qualitative Aptitude", "link": "https://drive.google.com/file/d/1_w8aO8lG1r-gkBODGjYGVikM8W-dSz9J/view?usp=drivesdk" },
+        { "title": "Quantitative Aptitude", "link": "https://drive.google.com/file/d/1_vA4I6z9I-uCTmicYRhMS_rNgxMiOac3/view?usp=drivesdk" }
+      ]
+    }
+  ]
+}

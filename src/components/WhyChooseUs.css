@@ -1,15 +1,15 @@
 .why-choose-us {
   text-align: center;
-  background-color: #db21fc; /* Updated background color */
+  background-color: #e309f7;/* Updated background color */
   padding: 40px 0;
 }
 
-h2 {
+.why-choose-us h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color:white;
   margin-bottom: 20px;
   font-weight: bold;
-}
+} 
 
 .content {
   display: flex;
