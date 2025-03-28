@@ -1,54 +1,83 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react"; // Import useEffect and useState
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar"; // Import Navbar
 import Footer from "./components/Footer";
-import Login from "./Auth/Login";
-import Signup from "./Auth/Signup";
 import Home from "./components/Home";
-import Profile from "./components/Profile";
 import Courses from "./components/Courses";
-import Hackathonsandevents from "./components/Hackathonsandevents";
-import TechNews from "./components/TechNews";
-import Scholarships from "./components/Scholarships";
 import Cheatsheets from "./components/Cheatsheets";
 import DSAandAptitude from "./components/DSAandAptitude";
-import { searchData } from "./components/searchData"; // Import searchData
-import ProfileSaved from "./components/ProfileSaved";
-import WebDevelopmentCheatsheets from "./components/WebDevelopmentCheatsheets"; // Import the new component
-import FullstackDevelopment from "./components/FullstackDevelopment"; // Import the new component
-
+import Signup from "./Auth/Signup";
+import Login from "./Auth/Login";
+import Scholarships from "./components/Scholarships"; // Import Scholarships
+import Hackathonsandevents from "./components/Hackathonsandevents"; // Import Hackathons and Events
+import TechNews from "./components/TechNews"; // Import Tech News
 
 const App = () => {
+  const [data, setData] = useState({
+    courses: [],
+    cheatsheets: [],
+    dsaAndAptitude: [],
+  }); // State to hold data from the dummy database
   const [savedItems, setSavedItems] = useState([]); // Shared state for saved items
 
+  // Fetch data from the dummy database (db.json)
   useEffect(() => {
-    // Store searchData in localStorage if not already present
-    if (!localStorage.getItem("searchData")) {
-      localStorage.setItem("searchData", JSON.stringify(searchData));
-    }
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/db.json"); // Ensure the path to db.json is correct
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const result = await response.json();
+        setData({
+          courses: result.courses || [],
+          cheatsheets: result.cheatsheets || [],
+          dsaAndAptitude: result.dsaAndAptitude || [],
+        });
+      } catch (error) {
+        console.error("Error fetching data from dummy database:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
     <Router>
-      <Navbar /> {/* Include Navbar */}
+      <AppContent data={data} savedItems={savedItems} setSavedItems={setSavedItems} />
+    </Router>
+  );
+};
+
+const AppContent = ({ data, savedItems, setSavedItems }) => {
+  const location = useLocation(); // Move useLocation inside Router
+
+  return (
+    <>
+      {/* Conditionally render Navbar */}
+      {location.pathname !== "/login" && location.pathname !== "/signup" && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/courses"
+          element={
+            <Courses
+              data={data.courses}
+              savedItems={savedItems}
+              setSavedItems={setSavedItems}
+            />
+          }
+        />
+        <Route path="/cheatsheets" element={<Cheatsheets data={data.cheatsheets} />} />
+        <Route path="/dsa-and-aptitude" element={<DSAandAptitude data={data.dsaAndAptitude} />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/courses" element={<Courses savedItems={savedItems} setSavedItems={setSavedItems} />} />
-        <Route path="/Hackathonsandevents" element={<Hackathonsandevents />} />
-        <Route path="/technews" element={<TechNews />} />
-        <Route path="/scholarships" element={<Scholarships savedItems={savedItems} setSavedItems={setSavedItems} />} />
-        <Route path="/cheatsheets" element={<Cheatsheets />} />
-        <Route path="/dsa-and-aptitude" element={<DSAandAptitude />} />
-        <Route path="/profile-saved" element={<ProfileSaved savedItems={savedItems} />} />
-        <Route path="/cheatsheets/web-development" element={<WebDevelopmentCheatsheets />} /> {/* Add this line */}
-        <Route path="/cheatsheets/full-stack-development" element={<FullstackDevelopment />} /> {/* Add this line */}
-
+        <Route path="/login" element={<Login />} />
+        <Route path="/Scholarships" element={<Scholarships />} /> {/* Scholarships Route */}
+        <Route path="/Hackathonsandevents" element={<Hackathonsandevents />} /> {/* Hackathons Route */}
+        <Route path="/TechNews" element={<TechNews />} /> {/* Tech News Route */}
       </Routes>
       <Footer /> {/* Include Footer */}
-    </Router>
+    </>
   );
 };
 

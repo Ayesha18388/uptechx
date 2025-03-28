@@ -1,43 +1,44 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"; // Import the CSS file for styling
+import "./Login.css";
 
 const Login = () => {
-  const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  // Handle input changes
   const handleChange = (e) => {
-    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setError("");
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { email, password } = credentials;
 
-    const storedUser = JSON.parse(localStorage.getItem("user"));
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const user = users.find(
+      (user) => user.email === formData.email && user.password === formData.password
+    );
 
-    if (storedUser && storedUser.email === email && storedUser.password === password) {
-      localStorage.setItem("loggedIn", true); // Mark user as logged in
-      alert("Login Successful!");
-      navigate("/"); // Redirect to home page
-    } else {
-      alert("Invalid Email or Password");
+    if (!user) {
+      setError("Invalid email or password!");
+      return;
     }
+
+    alert(`Welcome back, ${user.firstName} ${user.lastName}!`);
+    navigate("/"); // Redirect to home page
   };
 
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2 className="login-title">Welcome Back</h2>
-        <p className="login-subtitle">Please log in to your account</p>
+        <h2 className="login-title">Login to Your Account</h2>
         <form onSubmit={handleSubmit} className="login-form">
           <input
             type="email"
             name="email"
             placeholder="Email"
-            value={credentials.email}
+            value={formData.email}
             onChange={handleChange}
             required
             className="login-input"
@@ -46,7 +47,7 @@ const Login = () => {
             type="password"
             name="password"
             placeholder="Password"
-            value={credentials.password}
+            value={formData.password}
             onChange={handleChange}
             required
             className="login-input"
@@ -55,8 +56,9 @@ const Login = () => {
             Login
           </button>
         </form>
+        {error && <p className="error-message">{error}</p>}
         <p className="login-footer">
-          Don't have an account? <a href="/signup" className="signup-link">Sign Up</a>
+          Don't have an account? <a href="/signup" className="signup-link">Sign Up Here</a>
         </p>
       </div>
     </div>
@@ -64,5 +66,3 @@ const Login = () => {
 };
 
 export default Login;
-
-// changes html

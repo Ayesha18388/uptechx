@@ -1,117 +1,231 @@
-import React, { useState } from "react";
-//import { useNavigate } from "react-router-dom";
-//import { searchData } from "./searchData"; // Import searchData
+import React, { useEffect } from "react";
 
-// const SearchComponent = () => {
-//   const [query, setQuery] = useState("");
-//   const navigate = useNavigate();
-
-//   const handleSearch = (e) => {
-//     setQuery(e.target.value);
-//   };
-
-//   const handleResultClick = (path) => {
-//     navigate(path);
-//   };
-
-//   const filteredResults = searchData.filter((item) =>
-//     item.title.toLowerCase().includes(query.toLowerCase())
-//   );
-
-//   return (
-//     <div>
-//       <input type="text" value={query} onChange={handleSearch} placeholder="Search..." />
-//       <ul>
-//         {filteredResults.map((result, index) => (
-//           <li key={index} onClick={() => handleResultClick(result.path)}>
-//             {result.title}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-//export default Search;
-
-async function fetchJobs() {
-  const response = await fetch('db.json');
-  const data = await response.json();
-  return data.jobs;
+async function fetchData() {
+  try {
+    const response = await fetch("db.json");
+    const data = await response.json();
+    return {
+      courses: data.courses || [],
+      cheatsheets: data.cheatsheets || [],
+      dsaAndAptitude: data.dsaAndAptitude || [],
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      courses: [],
+      cheatsheets: [],
+      dsaAndAptitude: [],
+    };
+  }
 }
 
-// Load initial job listings
-async function loadJobs() {
-  const jobList = document.getElementById('jobList');
-  jobList.innerHTML = '';
-  
-  const jobs = await fetchJobs();
-  jobs.forEach((job) => {
-      const jobItem = document.createElement('li');
-      jobItem.innerHTML = `
-          <strong>${job.title}</strong> at <em>${job.company}</em>
-          <p>${job.description.substring(0, 100)}...</p>
-      `;
-      jobItem.onclick = () => viewJobDetails(job);
-      jobList.appendChild(jobItem);
+async function loadData() {
+  const coursesList = document.getElementById("coursesList");
+  const cheatsheetsList = document.getElementById("cheatsheetsList");
+  const dsaAndAptitudeList = document.getElementById("dsaAndAptitudeList");
+
+  if (!coursesList || !cheatsheetsList || !dsaAndAptitudeList) {
+    console.error("One or more elements are missing in the DOM.");
+    return;
+  }
+
+  coursesList.innerHTML = "<p>Loading courses...</p>";
+  cheatsheetsList.innerHTML = "<p>Loading cheatsheets...</p>";
+  dsaAndAptitudeList.innerHTML = "<p>Loading DSA and Aptitude...</p>";
+
+  try {
+    const { courses, cheatsheets, dsaAndAptitude } = await fetchData();
+
+    // Load Courses
+    if (courses.length > 0) {
+      coursesList.innerHTML = "";
+      courses.forEach((category) => {
+        const categoryItem = document.createElement("li");
+        categoryItem.innerHTML = `<strong>${category.category}</strong>`;
+        const courseItems = category.courses
+          .map(
+            (course) =>
+              `<li><strong>${course.title}</strong> - <a href="${course.link}" target="_blank">View</a></li>`
+          )
+          .join("");
+        categoryItem.innerHTML += `<ul>${courseItems}</ul>`;
+        coursesList.appendChild(categoryItem);
+      });
+    } else {
+      coursesList.innerHTML = "<p>No courses available.</p>";
+    }
+
+    // Load Cheatsheets
+    if (cheatsheets.length > 0) {
+      cheatsheetsList.innerHTML = "";
+      cheatsheets.forEach((category) => {
+        const categoryItem = document.createElement("li");
+        categoryItem.innerHTML = `<strong>${category.category}</strong>`;
+        const cheatsheetItems = category.items
+          .map(
+            (item) =>
+              `<li><strong>${item.title}</strong> - <a href="${item.link}" target="_blank">View</a></li>`
+          )
+          .join("");
+        categoryItem.innerHTML += `<ul>${cheatsheetItems}</ul>`;
+        cheatsheetsList.appendChild(categoryItem);
+      });
+    } else {
+      cheatsheetsList.innerHTML = "<p>No cheatsheets available.</p>";
+    }
+
+    // Load DSA and Aptitude
+    if (dsaAndAptitude.length > 0) {
+      dsaAndAptitudeList.innerHTML = "";
+      dsaAndAptitude.forEach((category) => {
+        const categoryItem = document.createElement("li");
+        categoryItem.innerHTML = `<strong>${category.category}</strong>`;
+        const dsaItems = category.items
+          .map(
+            (item) =>
+              `<li><strong>${item.title}</strong> - <a href="${item.link}" target="_blank">View</a></li>`
+          )
+          .join("");
+        categoryItem.innerHTML += `<ul>${dsaItems}</ul>`;
+        dsaAndAptitudeList.appendChild(categoryItem);
+      });
+    } else {
+      dsaAndAptitudeList.innerHTML = "<p>No DSA and Aptitude data available.</p>";
+    }
+  } catch (error) {
+    console.error("Error loading data:", error);
+    coursesList.innerHTML = "<p>Failed to load courses.</p>";
+    cheatsheetsList.innerHTML = "<p>Failed to load cheatsheets.</p>";
+    dsaAndAptitudeList.innerHTML = "<p>Failed to load DSA and Aptitude data.</p>";
+  }
+}
+
+async function filterData() {
+  const searchInput = document.getElementById("searchInput").value.toLowerCase();
+  const { courses, cheatsheets, dsaAndAptitude } = await fetchData();
+
+  const coursesList = document.getElementById("coursesList");
+  const cheatsheetsList = document.getElementById("cheatsheetsList");
+  const dsaAndAptitudeList = document.getElementById("dsaAndAptitudeList");
+
+  // Filter Courses
+  const filteredCourses = courses.map((category) => ({
+    ...category,
+    courses: category.courses.filter(
+      (course) =>
+        course.title.toLowerCase().includes(searchInput) ||
+        category.category.toLowerCase().includes(searchInput)
+    ),
+  }));
+
+  coursesList.innerHTML = "";
+  filteredCourses.forEach((category) => {
+    if (category.courses.length > 0) {
+      const categoryItem = document.createElement("li");
+      categoryItem.innerHTML = `<strong>${category.category}</strong>`;
+      const courseItems = category.courses
+        .map(
+          (course) =>
+            `<li><strong>${course.title}</strong> - <a href="${course.link}" target="_blank">View</a></li>`
+        )
+        .join("");
+      categoryItem.innerHTML += `<ul>${courseItems}</ul>`;
+      coursesList.appendChild(categoryItem);
+    }
+  });
+
+  // Filter Cheatsheets
+  const filteredCheatsheets = cheatsheets.map((category) => ({
+    ...category,
+    items: category.items.filter(
+      (item) =>
+        item.title.toLowerCase().includes(searchInput) ||
+        category.category.toLowerCase().includes(searchInput)
+    ),
+  }));
+
+  cheatsheetsList.innerHTML = "";
+  filteredCheatsheets.forEach((category) => {
+    if (category.items.length > 0) {
+      const categoryItem = document.createElement("li");
+      categoryItem.innerHTML = `<strong>${category.category}</strong>`;
+      const cheatsheetItems = category.items
+        .map(
+          (item) =>
+            `<li><strong>${item.title}</strong> - <a href="${item.link}" target="_blank">View</a></li>`
+        )
+        .join("");
+      categoryItem.innerHTML += `<ul>${cheatsheetItems}</ul>`;
+      cheatsheetsList.appendChild(categoryItem);
+    }
+  });
+
+  // Filter DSA and Aptitude
+  const filteredDSA = dsaAndAptitude.map((category) => ({
+    ...category,
+    items: category.items.filter(
+      (item) =>
+        item.title.toLowerCase().includes(searchInput) ||
+        category.category.toLowerCase().includes(searchInput)
+    ),
+  }));
+
+  dsaAndAptitudeList.innerHTML = "";
+  filteredDSA.forEach((category) => {
+    if (category.items.length > 0) {
+      const categoryItem = document.createElement("li");
+      categoryItem.innerHTML = `<strong>${category.category}</strong>`;
+      const dsaItems = category.items
+        .map(
+          (item) =>
+            `<li><strong>${item.title}</strong> - <a href="${item.link}" target="_blank">View</a></li>`
+        )
+        .join("");
+      categoryItem.innerHTML += `<ul>${dsaItems}</ul>`;
+      dsaAndAptitudeList.appendChild(categoryItem);
+    }
   });
 }
 
-// Filter job listings based on search input
-async function filterJobs() {
-  const searchInput = document.getElementById('searchInput').value.toLowerCase();
-  const jobs = await fetchJobs();
-  
-  const filteredJobs = jobs.filter(job => 
-      job.title.toLowerCase().includes(searchInput) || 
-      job.company.toLowerCase().includes(searchInput)
+const Search = () => {
+  useEffect(() => {
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchInput) {
+      searchInput.addEventListener("input", filterData);
+    } else {
+      console.error("Search input element not found in the DOM.");
+    }
+
+    // Initialize the data loading
+    loadData();
+
+    // Cleanup event listener on component unmount
+    return () => {
+      if (searchInput) {
+        searchInput.removeEventListener("input", filterData);
+      }
+    };
+  }, []);
+
+  return (
+    <div>
+      <h1>Search Courses, Cheatsheets, and DSA</h1>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <div>
+        <h2>Courses</h2>
+        <ul id="coursesList"></ul>
+      </div>
+      <div>
+        <h2>Cheatsheets</h2>
+        <ul id="cheatsheetsList"></ul>
+      </div>
+      <div>
+        <h2>DSA and Aptitude</h2>
+        <ul id="dsaAndAptitudeList"></ul>
+      </div>
+    </div>
   );
-  
-  const jobList = document.getElementById('jobList');
-  jobList.innerHTML = '';
-  
-  filteredJobs.forEach(job => {
-      const jobItem = document.createElement('li');
-      jobItem.innerHTML = `
-          <strong>${job.title}</strong> at <em>${job.company}</em>
-          <p>${job.description.substring(0, 100)}...</p>
-      `;
-      jobItem.onclick = () => viewJobDetails(job);
-      jobList.appendChild(jobItem);
-  });
-}
+};
 
-// View job details and navigate to job.html
-function viewJobDetails(job) {
-  localStorage.setItem('selectedJob', JSON.stringify(job));
-  window.location.href = 'job.html';
-}
-
-// Add a new job (Admin-only functionality)
-async function addJob(event) {
-  event.preventDefault();
-
-  const job = {
-      id: Date.now(),
-      title: document.getElementById('jobTitle').value,
-      company: document.getElementById('companyName').value,
-      location: document.getElementById('location').value,
-      ctc: document.getElementById('ctc').value,
-      hrContact: document.getElementById('hrContact').value,
-      description: document.getElementById('jobDescription').value,
-      requirements: document.getElementById('jobRequirements').value.split('\n'),
-      responsibilities: document.getElementById('responsibilities').value,
-      benefits: document.getElementById('benefits').value,
-      applyLink: document.getElementById('applyLink').value
-  };
-
-  const jobs = await fetchJobs();
-  jobs.push(job);
-
-  localStorage.setItem('jobs', JSON.stringify(jobs));
-  alert('Job added successfully!');
-  window.location.href = 'index.html';
-}
-
-// Initialize the job portal
-document.addEventListener('DOMContentLoaded', loadJobs);
+export default Search;
