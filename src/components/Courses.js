@@ -686,7 +686,8 @@ const Courses = () => {
 
   return (
     <section className="courses-section">
-      \<h1>Free Courses on Various Topics</h1>
+      \<h1>Free Courses on Various Topics</h1> 
+      {/* search bar */}
       <div className="course-list">
         {courseData.map((category) => (
           <div key={category.category} className="course-category">

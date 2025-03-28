@@ -91,27 +91,7 @@ function viewJobDetails(job) {
 async function addJob(event) {
   event.preventDefault();
 
-  const job = {
-      id: Date.now(),
-      title: document.getElementById('jobTitle').value,
-      company: document.getElementById('companyName').value,
-      location: document.getElementById('location').value,
-      ctc: document.getElementById('ctc').value,
-      hrContact: document.getElementById('hrContact').value,
-      description: document.getElementById('jobDescription').value,
-      requirements: document.getElementById('jobRequirements').value.split('\n'),
-      responsibilities: document.getElementById('responsibilities').value,
-      benefits: document.getElementById('benefits').value,
-      applyLink: document.getElementById('applyLink').value
-  };
-
-  const jobs = await fetchJobs();
-  jobs.push(job);
-
-  localStorage.setItem('jobs', JSON.stringify(jobs));
-  alert('Job added successfully!');
-  window.location.href = 'index.html';
 }
 
 // Initialize the job portal
-document.addEventListener('DOMContentLoaded', loadJobs);
+// document.addEventListener('DOMContentLoaded', loadJobs);

@@ -109,7 +109,7 @@ const Navbar = ({ toggleSidebar }) => {
         </a>
 
         {/* Search Bar in the center */}
-        <div className="flex-grow-1 d-flex justify-content-center">
+        {/* <div className="flex-grow-1 d-flex justify-content-center">
           <div className="search-box">
             <input
               type="text"
@@ -124,15 +124,15 @@ const Navbar = ({ toggleSidebar }) => {
             <FaSearch className="search-icon" onClick={handleSearchSubmit} />
 
             {/* Clear Button */}
-            {searchTerm && (
+            {/* {searchTerm && (
               <button className="clear-btn" onClick={() => setSearchTerm("")}>
                 ✖
               </button>
             )}
-          </div>
+          </div> */}
 
           {/* Search Results Dropdown */}
-          {searchTerm && (
+          {/* {searchTerm && (
             <div className={`search-results ${searchResults.length > 0 ? "show" : ""}`}>
               {searchResults.map((result, index) => (
                 <div
@@ -153,7 +153,7 @@ const Navbar = ({ toggleSidebar }) => {
               ))}
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* Login & Sign Up / Logout */}
         <div className="d-flex align-items-center">
