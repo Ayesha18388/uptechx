@@ -194,3 +194,8 @@
 .profile-icon:hover {
   color: #ff40ff; /* Pink color on hover */
 }
+
+.navbar-nav .nav-link {
+  margin: 0 15px; /* Add 15px spacing between links */
+}
+
