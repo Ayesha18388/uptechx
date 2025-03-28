@@ -42,7 +42,7 @@ const Navbar = ({ toggleSidebar }) => {
           <a href="/about.html" className="nav-link text-dark mx-3">
             About Us
           </a>
-          <a href="/contact-us.html" className="nav-link text-dark mx-3">
+          <a href="/contact us.html" className="nav-link text-dark mx-3">
             Contact Us
           </a>
         </div>
