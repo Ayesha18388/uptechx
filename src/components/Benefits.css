@@ -13,10 +13,12 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
   height: auto;
   padding: 40px 0;
   margin-bottom: 40px; /* Add margin to separate it from the Trending section */
   text-align: center;
+  background-color: #ffffff; /* Set background color to white */
 }
 
 .benefit-item {
