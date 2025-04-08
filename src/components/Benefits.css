@@ -16,10 +16,10 @@ h2 {
   
   height: auto;
   padding: 40px 0;
-  margin-bottom: 40px; /* Add margin to separate it from the Trending section */
+  margin-bottom: 10px;
   text-align: center;
-  background-color: #ffffff; /* Set background color to white */
-}
+  background-color: white; 
+} 
 
 .benefit-item {
   position: absolute;
