@@ -223,7 +223,7 @@ const hackathonsData = [
 
 ];
 
-const Hackathons = () => {
+const Hackathonsandevents = () => {
   return (
     <div className="container">
       <h1 className="title">Upcoming Hackathons and Tech Events in India (2025)</h1>
@@ -248,4 +248,4 @@ const Hackathons = () => {
   );
 };
 
-export default Hackathons;
+export default Hackathonsandevents;

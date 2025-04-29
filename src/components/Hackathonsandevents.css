@@ -8,22 +8,24 @@
 .title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #333;
+  margin-bottom: 20px;
+  color: #007bff;
 }
 
 .event-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .event-card {
   width: 100%; /* Stretch to full width */
+  flex: 1 1 calc(33.333% - 20px);
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 15px;
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -37,6 +39,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #007bff;
+  margin-bottom: 10px;
 }
 
 .event-title:hover {
@@ -44,7 +47,7 @@
 }
 
 .event-card p {
-  margin: 10px 0;
+  margin: 5px 0;
   color: #555;
   font-size: 1rem;
 }

@@ -61,10 +61,10 @@ const Navbar = ({ toggleSidebar }) => {
             </>
           ) : (
             <>
-              <a href="/login" className="text-dark mx-3 text-decoration-none">
+              <a href="/Login" className="text-dark mx-3 text-decoration-none">
                 Login
               </a>
-              <a href="/signup" className="btn btn-primary sign-up-btn">
+              <a href="/Signup" className="btn btn-primary sign-up-btn">
                 Sign Up
               </a>
             </>

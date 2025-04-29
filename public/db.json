@@ -38,7 +38,8 @@
           "level": "Intermediate",
           "link": "https://www.udemy.com/course/ai-in-practice/"
         }
-      ]
+      ],
+      "id": "01df"
     },
     {
       "category": "Data Science",
@@ -78,7 +79,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/specializations/data-science-foundations-r"
         }
-      ]
+      ],
+      "id": "8a0a"
     },
     {
       "category": "React.js, Next.js, Tailwind CSS, TypeScript",
@@ -139,7 +141,8 @@
           "level": "Beginner",
           "link": "https://www.coursera.org/projects/typescript-string-properties-and-methods"
         }
-      ]
+      ],
+      "id": "12a9"
     },
     {
       "category": "ChatGPT",
@@ -179,7 +182,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/learn/chatgpt-for-data-analytics"
         }
-      ]
+      ],
+      "id": "5e83"
     },
     {
       "category": "Generative AI",
@@ -219,7 +223,8 @@
           "level": "Beginner",
           "link": "https://www.coursera.org/learn/introduction-to-generative-ai"
         }
-      ]
+      ],
+      "id": "51c0"
     },
     {
       "category": "Data Analysis",
@@ -252,7 +257,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/professional-certificates/google-data-analytics"
         }
-      ]
+      ],
+      "id": "2838"
     },
     {
       "category": "Programming Languages",
@@ -292,7 +298,8 @@
           "level": "Beginner",
           "link": "https://www.coursera.org/learn/r-programming?"
         }
-      ]
+      ],
+      "id": "4122"
     },
     {
       "category": "Cloud Computing",
@@ -332,7 +339,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/learn/microsoft-azure-cloud-services?"
         }
-      ]
+      ],
+      "id": "b8ea"
     },
     {
       "category": "Web Development",
@@ -372,7 +380,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/professional-certificates/ibm-frontend-developer"
         }
-      ]
+      ],
+      "id": "e753"
     },
     {
       "category": "Full Stack Development",
@@ -412,7 +421,8 @@
           "level": "Advanced",
           "link": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
         }
-      ]
+      ],
+      "id": "0a87"
     },
     {
       "category": "AWS (Amazon Web Services)",
@@ -452,7 +462,8 @@
           "level": "Advanced",
           "link": "https://explore.skillbuilder.aws/learn/learning-plans/1570/aws-for-games-cloud-game-development-knowledge-badge-readiness-path"
         }
-      ]
+      ],
+      "id": "233f"
     },
     {
       "category": "DevOps",
@@ -492,7 +503,8 @@
           "level": "Advanced",
           "link": "https://www.coursera.org/specializations/devops-cloud-and-agile-foundations"
         }
-      ]
+      ],
+      "id": "8f31"
     },
     {
       "category": "UI/UX Design",
@@ -532,7 +544,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/learn/designing-user-interfaces-and-experiences-uiux"
         }
-      ]
+      ],
+      "id": "8118"
     },
     {
       "category": "Figma, Canva, Adobe",
@@ -572,7 +585,8 @@
           "level": "Beginner",
           "link": ""
         }
-      ]
+      ],
+      "id": "51d7"
     },
     {
       "category": "Cybersecurity",
@@ -612,7 +626,8 @@
           "level": "Advanced",
           "link": "https://www.coursera.org/specializations/cbrops"
         }
-      ]
+      ],
+      "id": "f923"
     },
     {
       "category": "Big Data",
@@ -652,7 +667,8 @@
           "level": "Beginner",
           "link": "https://www.coursera.org/learn/big-data-management"
         }
-      ]
+      ],
+      "id": "f039"
     },
     {
       "category": "Software Development",
@@ -692,7 +708,8 @@
           "level": "Intermediate",
           "link": "https://www.coursera.org/professional-certificates/generative-ai-for-software-development"
         }
-      ]
+      ],
+      "id": "9272"
     },
     {
       "category": "Data Structures and Algorithms (DSA)",
@@ -705,7 +722,7 @@
           "link": "https://www.coursera.org/learn/data-structures"
         },
         {
-          "id":89,
+          "id": 89,
           "title": "Python Data Structures",
           "description": "Learn data structures using Python.",
           "level": "Intermediate",
@@ -732,81 +749,241 @@
           "level": "Beginner",
           "link": "https://www.freecodecamp.org/news/learn-data-structures-and-algorithms/"
         }
-      ]
+      ],
+      "id": "d467"
     }
   ],
   "cheatsheets": [
     {
       "category": "Web Development Cheatsheets",
       "items": [
-        { "title": "HTML Cheat Sheet", "link": "https://drive.google.com/file/d/1ZSE9-sMpz3t63C1kYsbt6JIf1SR2o3w1/view?usp=drivesdk" },
-        { "title": "CSS Cheat Sheet", "link": "https://drive.google.com/file/d/1ZSV-bA18TpWmsU6Ofv5AhequD6_6oc70/view?usp=drivesdk" },
-        { "title": "JavaScript Cheat Sheet", "link": "https://drive.google.com/file/d/1ZTVt1_cF1NgxdeYEMvzkYtZwAb0CX9Sn/view?usp=drivesdk" },
-        { "title": "React.js Cheat Sheet", "link": "https://drive.google.com/file/d/1ZU4znQ1ivEA0QK74wrb7opiHdMpE92aU/view?usp=drivesdk" },
-        { "title": "Node.js Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXcfrqeSz9ZlisAhv3aqitkZ7ZiNxGZv/view?usp=drivesdk" },
-        { "title": "Tailwind CSS Cheat Sheet", "link": "https://drive.google.com/file/d/1ZWt3ec6hXy-WT0dKyHYszJoBidsTKZzB/view?usp=drivesdk" },
-        { "title": "Next.js Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
-      ]
+        {
+          "title": "HTML Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZSE9-sMpz3t63C1kYsbt6JIf1SR2o3w1/view?usp=drivesdk"
+        },
+        {
+          "title": "CSS Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZSV-bA18TpWmsU6Ofv5AhequD6_6oc70/view?usp=drivesdk"
+        },
+        {
+          "title": "JavaScript Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZTVt1_cF1NgxdeYEMvzkYtZwAb0CX9Sn/view?usp=drivesdk"
+        },
+        {
+          "title": "React.js Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZU4znQ1ivEA0QK74wrb7opiHdMpE92aU/view?usp=drivesdk"
+        },
+        {
+          "title": "Node.js Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXcfrqeSz9ZlisAhv3aqitkZ7ZiNxGZv/view?usp=drivesdk"
+        },
+        {
+          "title": "Tailwind CSS Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZWt3ec6hXy-WT0dKyHYszJoBidsTKZzB/view?usp=drivesdk"
+        },
+        {
+          "title": "Next.js Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        }
+      ],
+      "id": "1291"
     },
     {
       "category": "Full Stack Development Cheatsheets",
       "items": [
-        { "title": "Python Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Java Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "PHP Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Ruby Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
-      ]
+        {
+          "title": "Python Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Java Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "PHP Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Ruby Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        }
+      ],
+      "id": "e8dc"
     },
     {
       "category": "Security and Deployment Cheatsheets",
       "items": [
-        { "title": "User Authentication Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Security Practices Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Docker Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "CI/CD Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Cloud Deployment Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
-      ]
+        {
+          "title": "User Authentication Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Security Practices Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Docker Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "CI/CD Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Cloud Deployment Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        }
+      ],
+      "id": "56a6"
     },
     {
       "category": "Advanced Topics Cheatsheets",
       "items": [
-        { "title": "System Design Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Performance Optimization Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Cyber Security Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "Blockchain Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "NoSQL Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" },
-        { "title": "MongoDB Cheat Sheet", "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk" }
-      ]
+        {
+          "title": "System Design Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Performance Optimization Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Cyber Security Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "Blockchain Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "NoSQL Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        },
+        {
+          "title": "MongoDB Cheat Sheet",
+          "link": "https://drive.google.com/file/d/1ZXZpjO4Tq8mDfuPeUwVTb93E8Lk0mVg8/view?usp=drivesdk"
+        }
+      ],
+      "id": "e50f"
     }
   ],
   "dsaAndAptitude": [
     {
       "category": "DSA Roadmap",
       "items": [
-        { "title": "DSA Roadmap", "link": "https://roadmap.sh/datastructures-and-algorithms" }
-      ]
+        {
+          "title": "DSA Roadmap",
+          "link": "https://roadmap.sh/datastructures-and-algorithms"
+        }
+      ],
+      "id": "0371"
     },
     {
       "category": "DSA Problems Sheet",
       "items": [
-        { "title": "DSA sheet by Love Babbar", "link": "https://www.geeksforgeeks.org/dsa-sheet-by-love-babbar/" },
-        { "title": "DSA by Nishanth Chahar", "link": "https://docs.google.com/spreadsheets/d/1kyHfGGaLTzWspcqMUUS5Httmip7t8LJB0P-uPrRLGos/edit?usp=drivesdk" },
-        { "title": "DSA by Shraddha Khapra", "link": "https://docs.google.com/spreadsheets/u/0/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/htmlview" }
-      ]
+        {
+          "title": "DSA sheet by Love Babbar",
+          "link": "https://www.geeksforgeeks.org/dsa-sheet-by-love-babbar/"
+        },
+        {
+          "title": "DSA by Nishanth Chahar",
+          "link": "https://docs.google.com/spreadsheets/d/1kyHfGGaLTzWspcqMUUS5Httmip7t8LJB0P-uPrRLGos/edit?usp=drivesdk"
+        },
+        {
+          "title": "DSA by Shraddha Khapra",
+          "link": "https://docs.google.com/spreadsheets/u/0/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/htmlview"
+        }
+      ],
+      "id": "93ca"
     },
     {
       "category": "Data Structures and Algorithms",
       "items": [
-        { "title": "DSA in JAVA", "link": "https://drive.google.com/file/d/1a-Bskv5Ni37-dQoEa-XUitXr9XA0UC6M/view?usp=drivesdk" },
-        { "title": "DSA in C++", "link": "https://drive.google.com/file/d/1a0wGJJTzUM1Kgpua6k_NxYVPW8R5nubN/view?usp=drivesdk" }
-      ]
+        {
+          "title": "DSA in JAVA",
+          "link": "https://drive.google.com/file/d/1a-Bskv5Ni37-dQoEa-XUitXr9XA0UC6M/view?usp=drivesdk"
+        },
+        {
+          "title": "DSA in C++",
+          "link": "https://drive.google.com/file/d/1a0wGJJTzUM1Kgpua6k_NxYVPW8R5nubN/view?usp=drivesdk"
+        }
+      ],
+      "id": "1d59"
     },
     {
       "category": "Aptitude",
       "items": [
-        { "title": "Qualitative Aptitude", "link": "https://drive.google.com/file/d/1_w8aO8lG1r-gkBODGjYGVikM8W-dSz9J/view?usp=drivesdk" },
-        { "title": "Quantitative Aptitude", "link": "https://drive.google.com/file/d/1_vA4I6z9I-uCTmicYRhMS_rNgxMiOac3/view?usp=drivesdk" }
-      ]
+        {
+          "title": "Qualitative Aptitude",
+          "link": "https://drive.google.com/file/d/1_w8aO8lG1r-gkBODGjYGVikM8W-dSz9J/view?usp=drivesdk"
+        },
+        {
+          "title": "Quantitative Aptitude",
+          "link": "https://drive.google.com/file/d/1_vA4I6z9I-uCTmicYRhMS_rNgxMiOac3/view?usp=drivesdk"
+        }
+      ],
+      "id": "cd0b"
+    }
+  ],
+  "admin": {
+    "username": "kulsum",
+    "password": "123456",
+    "email": "kulsumparveen56@gmail.com",
+    "role": "superadmin"
+  },
+  "scholarships": [
+    {
+      "id": "1745814656268",
+      "title": "htojhgnhg",
+      "offeredBy": "fgfghmhmg",
+      "eligibility": "gfhfoimfihj",
+      "benefits": "htfinijhrihm",
+      "link": "tihkkhih0jm0j"
+    },
+    {
+      "id": "1745814797329",
+      "title": "hrh,mhm",
+      "offeredBy": "hfoholoohmhm",
+      "eligibility": "nhophmookm",
+      "benefits": "12000",
+      "link": "tbopgngfknon"
+    },
+    {
+      "id": 1745901273770,
+      "title": "hujjlk",
+      "offeredBy": "jm;jpijj",
+      "eligibility": "mfbdfbfdm",
+      "benefits": "grspgfpgdihg",
+      "link": "dfvffipdgtipgt"
+    }
+  ],
+  "newsArticles": [
+    {
+      "id": 1745895763012,
+      "title": "eyj",
+      "description": "mfhjmh",
+      "source": "mhfhmhm",
+      "publishedDate": ",jt,tj,m",
+      "link": "hmfmrm"
+    }
+  ],
+  "hackathonsData": [
+    {
+      "id": 1745901249400,
+      "title": "ggbfpkng",
+      "dates": "gfmkpgmn",
+      "mode": "vblnfbnk",
+      "location": "pk,pdmdm",
+      "description": "gn,ngfpnm",
+      "link": "gbfgpngfmpnbvnn"
+    },
+    {
+      "id": 1745901273770,
+      "title": "hujjlk",
+      "offeredBy": "jm;jpijj",
+      "eligibility": "mfbdfbfdm",
+      "benefits": "grspgfpgdihg",
+      "link": "dfvffipdgtipgt"
     }
   ]
 }

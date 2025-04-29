@@ -11,6 +11,7 @@ import Login from "./Auth/Login";
 import Scholarships from "./components/Scholarships"; // Import Scholarships
 import Hackathonsandevents from "./components/Hackathonsandevents"; // Import Hackathons and Events
 import TechNews from "./components/TechNews"; // Import Tech News
+import AdminPage from "./components/AdminPage"; // Import Admin Page
 
 const App = () => {
   const [data, setData] = useState({
@@ -75,6 +76,7 @@ const AppContent = ({ data, savedItems, setSavedItems }) => {
         <Route path="/Scholarships" element={<Scholarships />} /> {/* Scholarships Route */}
         <Route path="/Hackathonsandevents" element={<Hackathonsandevents />} /> {/* Hackathons Route */}
         <Route path="/TechNews" element={<TechNews />} /> {/* Tech News Route */}
+        <Route path="/AdminPage" element={<AdminPage />} /> {/* Admin Page Route */}
       </Routes>
       <Footer /> {/* Include Footer */}
     </>
