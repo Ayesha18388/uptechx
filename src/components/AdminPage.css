@@ -1,0 +1,128 @@
+.admin-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.admin-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.admin-section input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.admin-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-section button:hover {
+  background-color: #0056b3;
+}
+
+.admin-section input:focus,
+.admin-section select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.item-container button {
+  background-color: #ed2f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.item-container button:hover {
+  background-color: #cc0000;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.admin-section .add-button {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+}
+
+.admin-section .add-button:hover {
+  background-color: #218838;
+}
+
+.admin-section .edit-button,
+.admin-section .remove-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.admin-section .edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-section .edit-button:hover {
+  background-color: #0056b3;
+}
+
+.admin-section .remove-button {
+  background-color: #ed2f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.admin-section .remove-button:hover {
+  background-color: #cc0000;
+}
