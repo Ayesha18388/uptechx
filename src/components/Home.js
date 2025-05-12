@@ -6,6 +6,7 @@ import Mainsection from "./Mainsection";
 import WhyChooseUs from "./WhyChooseUs";
 import Benefits from "./Benefits";
 import Trending from "./Trending";
+import Feedback from "./Feedback";
 // eslint-disable-next-line
 import Footer from "./Footer";
 
@@ -18,7 +19,8 @@ const Home = () => {
       <WhyChooseUs />
       <Benefits />
       <Trending />
-      
+      <Feedback /> {/* Add the Feedback component here */}
+     
     </div>
   );
 };

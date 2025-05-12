@@ -47,12 +47,6 @@ h1 {
   background-color: #0056b3;
 }
 
-.admin-section input:focus,
-.admin-section select:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
 .item-container {
   display: flex;
   justify-content: space-between;
@@ -105,12 +99,12 @@ h1 {
 }
 
 .admin-section .edit-button {
-  background-color: #007bff;
+  background-color: #14d10e;
   color: white;
 }
 
 .admin-section .edit-button:hover {
-  background-color: #0056b3;
+  background-color: #4eb300;
 }
 
 .admin-section .remove-button {
@@ -123,6 +117,6 @@ h1 {
   margin-right: 10px;
 }
 
-.admin-section .remove-button:hover {
+.admin-section .remove-button:hover {        
   background-color: #cc0000;
 }

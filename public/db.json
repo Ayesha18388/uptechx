@@ -933,57 +933,380 @@
   },
   "scholarships": [
     {
-      "id": "1745814656268",
-      "title": "htojhgnhg",
-      "offeredBy": "fgfghmhmg",
-      "eligibility": "gfhfoimfihj",
-      "benefits": "htfinijhrihm",
-      "link": "tihkkhih0jm0j"
+      "id": "8a95",
+      "title": "Disha Scholarship Program",
+      "offeredBy": "Birlasoft",
+      "eligibility": "Undergraduate (General/Professional courses)",
+      "benefits": "Up to ₹25,000 annually",
+      "link": "https://www.buddy4study.com/page/disha-scholarship-program"
     },
     {
-      "id": "1745814797329",
-      "title": "hrh,mhm",
-      "offeredBy": "hfoholoohmhm",
-      "eligibility": "nhophmookm",
-      "benefits": "12000",
-      "link": "tbopgngfknon"
+      "id": "34cf",
+      "title": "PHINIA Scholarship Program 2024-25",
+      "offeredBy": "PHINIA",
+      "eligibility": "B.Tech/B.E. (2nd year and above)",
+      "benefits": "50% of annual tuition fees",
+      "link": "https://www.buddy4study.com/page/phinia-scholarship-program"
     },
     {
-      "id": 1745901273770,
-      "title": "hujjlk",
-      "offeredBy": "jm;jpijj",
-      "eligibility": "mfbdfbfdm",
-      "benefits": "grspgfpgdihg",
-      "link": "dfvffipdgtipgt"
+      "id": "d632",
+      "title": "Appinventiv 'Edu Boost' Scholarship Program",
+      "offeredBy": "Appinventiv Foundation",
+      "eligibility": "B.Tech students (CSE, IT, ECE, EEE), BCA",
+      "benefits": "₹30,000 one-time scholarship",
+      "link": "https://www.buddy4study.com/page/appinventiv-edu-boost-scholarship-program"
+    },
+    {
+      "id": "6085",
+      "title": "The Cadence Scholarship Program",
+      "offeredBy": "Cadence Design Systems & Concern India Foundation",
+      "eligibility": "Undergraduate/Postgraduate students",
+      "benefits": "Financial support for education",
+      "link": "https://www.buddy4study.com/page/the-cadence-scholarship-program"
+    },
+    {
+      "id": "cdf4",
+      "title": "Global Study UK Scholarship",
+      "offeredBy": "Global Study UK",
+      "eligibility": "Students applying to UK universities",
+      "benefits": "£1,000 - £5,000",
+      "link": "https://www.buddy4study.com/page/global-study-uk-scholarship"
+    },
+    {
+      "id": "5c5c",
+      "title": "Scholarships for UG and PG Students by Indian Oil",
+      "offeredBy": "Indian Oil Corporation",
+      "eligibility": "Undergraduate/Postgraduate students",
+      "benefits": "₹1,000 - ₹5,000 monthly stipend",
+      "link": "https://www.buddy4study.com/page/scholarships-for-ug-and-pg-students-by-indian-oil"
+    },
+    {
+      "id": "4874",
+      "title": "Microsoft Research India PhD Fellowship",
+      "offeredBy": "Microsoft Research India",
+      "eligibility": "Ph.D. students in India",
+      "benefits": "Full tuition fee support",
+      "link": "https://www.buddy4study.com/page/microsoft-research-india-phd-fellowship"
+    },
+    {
+      "id": "663d",
+      "title": "HDFC Educational Crisis Scholarship",
+      "offeredBy": "HDFC Ltd",
+      "eligibility": "Students affected by a crisis",
+      "benefits": "₹10,000 - ₹50,000",
+      "link": "https://www.buddy4study.com/page/hdfc-educational-crisis-scholarship"
+    },
+    {
+      "id": "4537",
+      "title": "Tata Scholarship for Indian Students",
+      "offeredBy": "Tata Education and Development Trust",
+      "eligibility": "Undergraduate students applying to Cornell University, USA",
+      "benefits": "Full scholarship covering tuition, accommodation, and other expenses",
+      "link": "https://www.buddy4study.com/page/tata-scholarship"
+    },
+    {
+      "id": "1980",
+      "title": "Nurture the Future Scholarship",
+      "offeredBy": "XIME",
+      "eligibility": "MBA students",
+      "benefits": "₹50,000 - ₹2,00,000",
+      "link": "https://www.buddy4study.com/page/nurture-the-future-scholarship"
+    },
+    {
+      "id": "c35e",
+      "title": "L’Oréal India For Young Women in Science Scholarship",
+      "offeredBy": "L’Oréal India",
+      "eligibility": "Female students pursuing science-related undergraduate courses",
+      "benefits": "₹2,50,000",
+      "link": "https://www.buddy4study.com/page/loreal-india-for-young-women-in-science-scholarship"
+    },
+    {
+      "id": "0fb5",
+      "title": "Google India PhD Fellowship",
+      "offeredBy": "Google India",
+      "eligibility": "PhD students from Indian universities",
+      "benefits": "₹3,00,000 per year",
+      "link": "https://www.buddy4study.com/page/google-india-phd-fellowship"
+    },
+    {
+      "id": "85dc",
+      "title": "Dr. Reddy's Foundation's Sashakt Scholarship",
+      "offeredBy": "Dr. Reddy's Foundation",
+      "eligibility": "Female students in undergraduate courses",
+      "benefits": "₹50,000 per year",
+      "link": "https://www.buddy4study.com/page/dr-reddys-foundation-sashakt-scholarship"
+    },
+    {
+      "id": "d832",
+      "title": "Indian Oil Academic Scholarship",
+      "offeredBy": "Indian Oil Corporation",
+      "eligibility": "Students in undergraduate or postgraduate programs",
+      "benefits": "₹10,000 - ₹20,000 per year",
+      "link": "https://www.buddy4study.com/page/indian-oil-academic-scholarship"
+    },
+    {
+      "id": "faac",
+      "title": "Pradhan Mantri Scholarship Scheme",
+      "offeredBy": "Government of India",
+      "eligibility": "Children of deceased and disabled personnel of armed forces",
+      "benefits": "Up to ₹10,000 per year",
+      "link": "https://www.buddy4study.com/page/pradhan-mantri-scholarship-scheme"
+    },
+    {
+      "id": "9f63",
+      "title": "Kishore Vaigyanik Protsahan Yojana (KVPY)",
+      "offeredBy": "Department of Science and Technology, Government of India",
+      "eligibility": "Students pursuing basic science courses",
+      "benefits": "₹5,000 per month",
+      "link": "https://www.buddy4study.com/page/kvpy-scholarship"
+    },
+    {
+      "id": "ee43",
+      "title": "Fair and Lovely Foundation Scholarship",
+      "offeredBy": "Fair and Lovely Foundation",
+      "eligibility": "Female students pursuing higher education",
+      "benefits": "₹1,00,000 for course fees",
+      "link": "https://www.buddy4study.com/page/fair-and-lovely-foundation-scholarship"
+    },
+    {
+      "id": "c12a",
+      "title": "PG Indira Gandhi Scholarship for Single Girl Child",
+      "offeredBy": "University Grants Commission (UGC)",
+      "eligibility": "Single girl child pursuing post-graduate courses",
+      "benefits": "₹36,200 per year",
+      "link": "https://www.buddy4study.com/page/pg-indira-gandhi-scholarship-for-single-girl-child"
+    },
+    {
+      "id": "f52d",
+      "title": "Narotam Sekhsaria Foundation Scholarship",
+      "offeredBy": "Narotam Sekhsaria Foundation",
+      "eligibility": "Postgraduate students from India",
+      "benefits": "₹20,00,000 for study abroad",
+      "link": "https://www.buddy4study.com/page/narotam-sekhsaria-foundation-scholarship"
+    },
+    {
+      "id": "68bc",
+      "title": "Swami Vivekananda Merit Cum Means Scholarship",
+      "offeredBy": "Government of West Bengal",
+      "eligibility": "Undergraduate students from West Bengal",
+      "benefits": "₹500 - ₹5,000 per month",
+      "link": "https://www.buddy4study.com/page/swami-vivekananda-merit-cum-means-scholarship"
+    },
+    {
+      "id": "9a8e",
+      "title": "IIT Kanpur Merit-cum-Means Scholarship",
+      "offeredBy": "IIT Kanpur",
+      "eligibility": "Students pursuing B.Tech from IIT Kanpur",
+      "benefits": "Tuition fee coverage",
+      "link": "https://www.buddy4study.com/page/iit-kanpur-merit-cum-means-scholarship"
+    },
+    {
+      "id": "fc9a",
+      "title": "Inlaks Shivdasani Foundation Scholarship",
+      "offeredBy": "Inlaks Shivdasani Foundation",
+      "eligibility": "Indian students pursuing a Master's degree abroad",
+      "benefits": "Up to ₹20,00,000 for study abroad",
+      "link": "https://www.buddy4study.com/page/inlaks-shivdasani-foundation-scholarship"
+    },
+    {
+      "id": "e62c",
+      "title": "Jawaharlal Nehru Memorial Fund Scholarship",
+      "offeredBy": "Jawaharlal Nehru Memorial Fund",
+      "eligibility": "Indian students pursuing M.Phil/Ph.D.",
+      "benefits": "₹18,000 per month",
+      "link": "https://www.buddy4study.com/page/jawaharlal-nehru-memorial-fund-scholarship"
+    },
+    {
+      "id": "6ae3",
+      "title": "UNESCO/Keizo Obuchi Research Fellowship",
+      "offeredBy": "UNESCO",
+      "eligibility": "International students pursuing a Ph.D. in the field of human resources",
+      "benefits": "Full tuition and living stipend",
+      "link": "https://www.buddy4study.com/page/unesco-keizo-obuchi-research-fellowship"
+    },
+    {
+      "id": "5383",
+      "title": "British Council India IELTS Scholarship",
+      "offeredBy": "British Council India",
+      "eligibility": "Students who wish to study abroad",
+      "benefits": "£3,000 towards tuition fees",
+      "link": "https://www.buddy4study.com/page/british-council-india-ielts-scholarship"
+    },
+    {
+      "id": "cda4",
+      "title": "K.C. Mahindra Education Trust Scholarship",
+      "offeredBy": "K.C. Mahindra Education Trust",
+      "eligibility": "Indian students pursuing post-graduate studies abroad",
+      "benefits": "₹1,00,000 - ₹5,00,000",
+      "link": "https://www.buddy4study.com/page/k-c-mahindra-education-trust-scholarship"
+    },
+    {
+      "id": "445a",
+      "title": "Narayan Bhatnagar Memorial Scholarship",
+      "offeredBy": "Narayan Bhatnagar Foundation",
+      "eligibility": "Students from economically disadvantaged backgrounds",
+      "benefits": "₹50,000 per year",
+      "link": "https://www.buddy4study.com/page/narayan-bhatnagar-memorial-scholarship"
     }
   ],
   "newsArticles": [
-    {
-      "id": 1745895763012,
-      "title": "eyj",
-      "description": "mfhjmh",
-      "source": "mhfhmhm",
-      "publishedDate": ",jt,tj,m",
-      "link": "hmfmrm"
-    }
+    
   ],
   "hackathonsData": [
+    
+    
+  ],
+  "hackathons": [
     {
-      "id": 1745901249400,
-      "title": "ggbfpkng",
-      "dates": "gfmkpgmn",
-      "mode": "vblnfbnk",
-      "location": "pk,pdmdm",
-      "description": "gn,ngfpnm",
-      "link": "gbfgpngfmpnbvnn"
+      "id": "65f5",
+      "title": "HackIndia 2025",
+      "dates": "To be announced",
+      "mode": "Online",
+      "location": "--",
+      "description": "India’s largest Web3 and AI hackathon, aimed at empowering the next generation of innovators.",
+      "link": "https://www.airmeet.com/hub/blog/famous-hackathons-of-india/?utm_source=chatgpt.com",
+      "registration": "Open"
     },
     {
-      "id": 1745901273770,
-      "title": "hujjlk",
-      "offeredBy": "jm;jpijj",
-      "eligibility": "mfbdfbfdm",
-      "benefits": "grspgfpgdihg",
-      "link": "dfvffipdgtipgt"
+      "id": "56b0",
+      "title": "HackForce Challenge 2025",
+      "dates": "To be announced",
+      "mode": "Online",
+      "location": "--",
+      "description": "A two-day coding event focused on solving real-world challenges using AI, emphasizing web development, machine learning, and data structures.",
+      "link": "https://reskilll.com/allhacks?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "0ba8",
+      "title": "Innovation Hackathon 2025",
+      "dates": "April 10-11, 2025",
+      "mode": "Online",
+      "location": "--",
+      "description": "A 48-hour hackathon focusing on social good innovations using technology to solve real-world problems.",
+      "link": "https://www.eventbrite.com/d/india/innovation-hackathon/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "6f2c",
+      "title": "Hackathon of the Future 2025",
+      "dates": "May 5–6, 2025",
+      "mode": "Offline",
+      "location": "Hyderabad",
+      "description": "A two-day hackathon focused on futuristic technologies like quantum computing, AI, and IoT.",
+      "link": "https://www.eventbrite.com/d/india/hackathon-of-the-future-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "5682",
+      "title": "Mumbai Tech Fest 2025",
+      "dates": "May 15-17, 2025",
+      "mode": "Offline",
+      "location": "Mumbai",
+      "description": "A three-day event focusing on technology innovations, with keynote speakers, panel discussions, and workshops in various tech domains.",
+      "link": "https://www.eventbrite.com/d/india/mumbai-tech-fest-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "b011",
+      "title": "VIT Hackathon 2025",
+      "dates": "May 22-24, 2025",
+      "mode": "Offline",
+      "location": "VIT University, Vellore",
+      "description": "A student-led hackathon with a focus on tech-driven solutions for education, healthcare, and sustainability.",
+      "link": "https://www.eventbrite.com/d/india/vit-hackathon-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "4500",
+      "title": "AI for India 2025",
+      "dates": "June 10-12, 2025",
+      "mode": "Online",
+      "location": "--",
+      "description": "A nationwide AI hackathon, inviting participants to innovate AI solutions addressing India’s social and economic challenges.",
+      "link": "https://www.eventbrite.com/d/india/ai-for-india-hackathon/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "ae53",
+      "title": "GITAM Tech Fest 2025",
+      "dates": "June 20–22, 2025",
+      "mode": "Offline",
+      "location": "GITAM University, Visakhapatnam",
+      "description": "A tech festival featuring tech talks, workshops, competitions, and hands-on activities across a variety of technologies.",
+      "link": "https://www.eventbrite.com/d/india/gitam-tech-fest-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "173f",
+      "title": "Technozion 2025",
+      "dates": "July 5-7, 2025",
+      "mode": "Offline",
+      "location": "National Institute of Technology, Warangal",
+      "description": "Technozion is a tech fest that brings together tech enthusiasts and innovators for workshops, competitions, and fun-filled events.",
+      "link": "https://www.eventbrite.com/d/india/technozion-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "70d7",
+      "title": "Code for Good 2025",
+      "dates": "July 15-17, 2025",
+      "mode": "Online",
+      "location": "--",
+      "description": "A global virtual hackathon for developers to create tech solutions that address social problems and create positive impact in communities.",
+      "link": "https://www.eventbrite.com/d/india/code-for-good-hackathon/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "fca1",
+      "title": "YuvaHack 2025",
+      "dates": "August 1-3, 2025",
+      "mode": "Offline",
+      "location": "Delhi",
+      "description": "A youth-driven hackathon bringing together passionate young developers to build innovative projects in the fields of technology and social impact.",
+      "link": "https://www.eventbrite.com/d/india/yuva-hack-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "7efc",
+      "title": "DevFest 2025",
+      "dates": "August 15-17, 2025",
+      "mode": "Offline",
+      "location": "Pune",
+      "description": "A three-day developer-focused event, with workshops, coding sessions, and talks on various emerging technologies like AI, machine learning, and cloud computing.",
+      "link": "https://www.eventbrite.com/d/india/devfest-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "86ba",
+      "title": "Startup Weekend Bengaluru 2025",
+      "dates": "September 10-12, 2025",
+      "mode": "Offline",
+      "location": "Bengaluru",
+      "description": "A 54-hour event where developers, designers, and business professionals work together to create a startup in just one weekend.",
+      "link": "https://www.eventbrite.com/d/india/startup-weekend-bengaluru-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
+    },
+    {
+      "id": "c9d5",
+      "title": "Tech Fest India 2025",
+      "dates": "October 1-3, 2025",
+      "mode": "Offline",
+      "location": "New Delhi",
+      "description": "A massive technology festival that brings together leading tech experts, entrepreneurs, and developers for a series of workshops, talks, and networking opportunities.",
+      "link": "https://www.eventbrite.com/d/india/tech-fest-india-2025/?utm_source=chatgpt.com",
+      "registration": "Open"
     }
-  ]
+  ],
+  "trends": [
+    {
+      "id": "853c",
+      "title": "Amazon Enhances Alexa's Capabilities with New AI Features",
+      "description": "Amazon is integrating advanced AI features into Alexa, aiming to provide more personalized and context-aware responses, enhancing user interaction and satisfaction.",
+      "source": "TechNewsWorld",
+      "link": "https://www.technewsworld.com/article/amazon-enhances-alexas-capabilities-with-new-ai-features-2025-03-03/",
+      "publishedDate": "March 3, 2025"
+    }
+  ],
+  "feedback": []
 }

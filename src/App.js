@@ -13,6 +13,7 @@ import Hackathonsandevents from "./components/Hackathonsandevents"; // Import Ha
 import TechNews from "./components/TechNews"; // Import Tech News
 import AdminPage from "./components/AdminPage"; // Import Admin Page
 
+
 const App = () => {
   const [data, setData] = useState({
     courses: [],
