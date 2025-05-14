@@ -101,10 +101,22 @@ const AdminPage = () => {
     if (type === "trends") setNewTrend(item);
   };
 
+  // Handle logout
+  const handleLogout = () => {
+    // Clear any authentication tokens or session data
+    localStorage.removeItem("authToken");
+    alert("You have been logged out.");
+    window.location.href = "/"; // Redirect to the home page
+  };
+
   return (
     <div className="admin-page">
-      <h1>Admin Panel</h1>
-
+      <div className="admin-header">
+        <h1>Admin Dashboard</h1>
+        <button className="logout-button" onClick={handleLogout}>
+          Logout
+        </button>
+      </div>
       {/* Hackathons Section */}
       <div className="admin-section">
         <h2>Manage Hackathons</h2>
@@ -239,7 +251,7 @@ const AdminPage = () => {
 
       {/* Trends Section */}
       <div className="admin-section">
-        <h2>Manage Trends</h2>
+        <h2>Manage Tech News</h2>
         <input
           type="text"
           placeholder="Title"

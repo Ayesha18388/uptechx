@@ -64,12 +64,48 @@
 <body>
   <div class="feedback-container">
     <h4>How can we improve your website experience?</h4>
-    <form action="#" method="post">
+    <form id="feedbackForm">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="feedback" placeholder="Enter your feedback here..." required></textarea>
       <button type="submit">Submit</button>
     </form>
+    <div id="feedbackMessage" style="text-align:center;color:green;margin-top:10px;"></div>
   </div>
+  <script>
+    document.getElementById('feedbackForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const feedback = this.feedback.value.trim();
+      const messageDiv = document.getElementById('feedbackMessage');
+      messageDiv.textContent = "";
+
+      if (!name || !email || !feedback) {
+        messageDiv.style.color = "red";
+        messageDiv.textContent = "Please fill out all fields.";
+        return;
+      }
+
+      try {
+        const res = await fetch('http://localhost:5000/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message: feedback })
+        });
+        if (res.ok) {
+          messageDiv.style.color = "green";
+          messageDiv.textContent = "Thank you for your feedback!";
+          this.reset();
+        } else {
+          messageDiv.style.color = "red";
+          messageDiv.textContent = "Failed to submit feedback. Please try again.";
+        }
+      } catch (err) {
+        messageDiv.style.color = "red";
+        messageDiv.textContent = "Server error. Please try again later.";
+      }
+    });
+  </script>
 </body>
 </html>

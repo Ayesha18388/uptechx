@@ -27,6 +27,7 @@ const Feedback = () => {
     }
 
     try {
+      // Use absolute URL if running frontend and backend on different ports
       const res = await fetch("http://localhost:5000/feedback", {
         method: "POST",
         headers: {
@@ -39,14 +40,19 @@ const Feedback = () => {
         setSuccessMessage("Thank you for your feedback!");
         setFeedback({ name: "", email: "", message: "" });
       } else {
-        const errorData = await res.json();
+        let errorData = "";
+        try {
+          errorData = await res.json();
+        } catch {
+          errorData = await res.text();
+        }
         console.error("Error Response:", errorData);
         setErrorMessage("Failed to submit feedback. Please try again.");
       }
     } catch (error) {
       console.error("Error submitting feedback:", error);
       setErrorMessage(
-        "An error occurred. Please ensure the backend server is running and try again."
+        "An error occurred. Please ensure the backend server is running at http://localhost:5000 and CORS is not blocked."
       );
     }
   };

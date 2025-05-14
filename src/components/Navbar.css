@@ -199,3 +199,19 @@
   margin: 0 15px; /* Add 15px spacing between links */
 }
 
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links a {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+

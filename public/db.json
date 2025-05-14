@@ -1149,13 +1149,8 @@
       "link": "https://www.buddy4study.com/page/narayan-bhatnagar-memorial-scholarship"
     }
   ],
-  "newsArticles": [
-    
-  ],
-  "hackathonsData": [
-    
-    
-  ],
+  "newsArticles": [],
+  "hackathonsData": [],
   "hackathons": [
     {
       "id": "65f5",
@@ -1308,5 +1303,13 @@
       "publishedDate": "March 3, 2025"
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "id": "1a2b",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "message": "This platform is amazing! I found so many useful resources for my studies.",
+      "timestamp": "2025-03-01T10:00:00Z"
+    }
+  ]
 }
